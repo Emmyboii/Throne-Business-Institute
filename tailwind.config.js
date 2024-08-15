@@ -1,0 +1,42 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      // animation: {
+      //   fade: 'fade 1.5s'
+      // },
+      // keyframes: {
+      //   fade: {
+      //     from: { opacity: .4 },
+      //     to: { opacity: 1 },
+      //   },
+      // },
+
+      screens: {
+        '2la': '1080px',
+        '2ls': '1050px',
+        'ms': '930px',
+        'mm': '960px',
+        'mv': '900px',
+        'mr': '800px',
+        'ma': '850px',
+        'ss': '680px',
+        'sy': '650px',
+        'sw': '689px',
+        'sd': '530px',
+        'sx': '550px',
+        'se': '500px',
+        'sa': '400px',
+        'sv': '430px',
+        'sb': '415px',
+        'st': '350px',
+        'sl': '300px',
+      },
+    },
+    plugins: [],
+  }
+}
+
