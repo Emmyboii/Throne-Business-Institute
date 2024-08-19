@@ -22,8 +22,8 @@ const Homeindex = () => {
     }, []);
 
     return (
-        <div className='w-full h-[100%] bg-blue-500'>
-            <img src={Background} alt='-' className='w-full h-screen object-cover opacity-50' />
+        <div className='w-full h-[100%] bg-blue-500 outline-none border-none'>
+            <img src={Background} alt='-' className='w-full h-lvh object-cover opacity-50' />
             <div data-aos="fade-down" data-aos-delay="200" className='aos-init absolute top-[40%] flex flex-col  justify-center sp:top-[50%] left-[4%]'>
                 <h1 className='xl:text-[65px] lg:text-[60px] md:text-[55px] sv:text-[49px] text-[48px] se:text-[57px] sp:text-[47px] font-bold text-white'>
                     Accelerate <br className='sp:hidden block' /> Your Future.
