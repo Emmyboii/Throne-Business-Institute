@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Blackbg from '../Images/Blackbg.JPG';
+// import Blackbg from '../Images/Blackbg.JPG';
 import graduate from '../Images/graduate.jpg';
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -16,12 +16,11 @@ const AboutUs = () => {
     }, []);
 
     return (
-        <div className='relative w-full text-white flex items-center justify-center'>
-            <img className='w-full h-[150vh] st:h-[170vh] sa:h-[140vh] md:h-[130vh] ma:h-[120vh] mm:h-[110vh] 2az:h-[150vh] lg:h-[120vh] object-cover' src={Blackbg} alt="" />
-            <h1 className='md:top-[3%] lg:top-[4%] st:top-[1%] top-[1%] absolute lg:text-[65px] md:text-[45px] st:text-[36px] text-[30px] font-semibold'>
+        <div className='w-full text-white bg-[#202020] py-[50px] flex flex-col items-center justify-center'>
+            <h1 className='  lg:text-[65px] md:text-[45px] st:text-[36px] text-[30px] font-semibold'>
                 About Us
             </h1>
-            <div className='md:grid md:grid-cols-2 flex flex-col-reverse absolute xl:top-[26%] lg:top-[20%] md:top-[12%] top-[0%]'>
+            <div className='md:grid md:grid-cols-2 flex flex-col-reverse'>
                 <div className='xl:px-[50px] md:pl-[30px]'>
                     <p data-aos="fade-down" data-aos-delay="200" className='aos-init sm:text-[30px] st:text-[26px] text-[22px] text-center md:text-left mt-0 st:mt-5 lg:mt-1 font-medium'>
                         What We Represent
@@ -40,7 +39,7 @@ const AboutUs = () => {
                         and making a positive impact on society.
                     </p><br />
                     <a rel="noreferrer" href='/about'>
-                        <p data-aos="fade-up" className=' text-orange-500 st:text-[20px] md:left-[3%] left-[36%] sm:left-[40%] flex gap-3 absolute hover:scale-90 duration-500'>
+                        <p data-aos="fade-up" className=' text-orange-500 st:text-[20px] flex gap-3 mx-6 hover:scale-90 duration-500'>
                             Learn More <FaArrowRightLong className='mt-[6px]' />
                         </p>
                     </a>

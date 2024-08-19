@@ -46,7 +46,7 @@ const ProgramOverview = () => {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-8 mx-1 pt-10'>
                 <div className='border md:mx-0 sm:mx-[80px] se:mx-[60px] shadow-lg rounded-lg'>
                     {/* <div className='mySlides'> */}
-                        <img className='h-[50vh] w-full hover:scale-y-105 rounded-t-lg duration-300 object-cover' src={PC} alt="" />
+                        <img className='h-[50vh] w-full object-cover lg:object-fill hover:scale-y-105 rounded-t-lg duration-300' src={PC} alt="" />
                     {/* </div> */}
                     <div className='pt-[20px] pb-[93px] px-7'>
                         <h1 className='text-center md:text-[20px] text-[19px] font-medium'>Professional Courses</h1>

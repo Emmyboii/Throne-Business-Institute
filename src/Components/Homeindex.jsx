@@ -24,10 +24,10 @@ const Homeindex = () => {
     return (
         <div className='w-full'>
             <div className='flex h-[100vh] justify-center bg-blue-400'>
-                <img src={Background} alt='' className='w-full ma:object-fill object-cover opacity-50' />
+                <img src={Background} alt='-' className='w-full object-cover opacity-50' />
                 <div data-aos="fade-down" data-aos-delay="200" className='aos-init absolute top-[40%] sp:top-[50%] left-[4%]'>
                     <h1 className='xl:text-[65px] lg:text-[60px] md:text-[55px] sv:text-[49px] text-[48px] se:text-[57px] sp:text-[47px] font-bold text-white'>
-                        Accelerate Your Future.
+                        Accelerate <br className='sp:hidden block'/> Your Future.
                     </h1>
                 </div>
                 <div className='absolute top-[67%] sp:top-[65%] xl:mr-[550px] 2la:mr-[450px] ms:mr-[400px] md:mr-[250px] sm:mr-[120px] sx:mr-[80px] left-[4%]'>
@@ -35,7 +35,7 @@ const Homeindex = () => {
                         Earn globally recognized degrees, diplomas and certificates with unbeatable scholarship.
                     </p>
                     <a href='/programs'>
-                        <button onClick={() => setMenu('program')} data-aos="fade-up" data-aos-delay="600" className='aos-init bg-blue-400 st:mt-9 active:scale-95 text-white py-3 px-6 rounded-lg outline-none active:bg-blue-300'>
+                        <button onClick={() => setMenu('program')} data-aos="fade-up" data-aos-delay="600" className='aos-init bg-blue-400 mt-9 active:scale-95 text-white py-3 px-6 rounded-lg outline-none active:bg-blue-300'>
                             Start your Journey
                         </button>
                     </a>
