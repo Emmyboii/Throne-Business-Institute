@@ -17,7 +17,7 @@ const AboutUs = () => {
 
     return (
         <div className='relative w-full text-white flex items-center justify-center'>
-            <img className='w-full h-[134vh] st:h-[150vh] sa:h-[140vh] md:h-[130vh] ma:h-[120vh] mm:h-[110vh] 2az:h-[150vh] lg:h-[120vh]' src={Blackbg} alt="" />
+            <img className='w-full h-[150vh] st:h-[170vh] sa:h-[140vh] md:h-[130vh] ma:h-[120vh] mm:h-[110vh] 2az:h-[150vh] lg:h-[120vh] object-cover' src={Blackbg} alt="" />
             <h1 className='md:top-[3%] lg:top-[4%] st:top-[1%] top-[1%] absolute lg:text-[65px] md:text-[45px] st:text-[36px] text-[30px] font-semibold'>
                 About Us
             </h1>

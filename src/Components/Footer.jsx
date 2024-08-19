@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import Logo from '../Images/TBI logo.png';
 import { FaRegCopyright } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -8,11 +8,23 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
+
+    const [menu, setMenu] = useState(
+        JSON.parse(localStorage.getItem('menu')) || "home");
+
+        useEffect(() => {
+            localStorage.setItem('menu', JSON.stringify(menu));
+        }, [menu]);
+
+        const handleMenu = () => {  
+            setMenu('home')
+        }
+
     return (
         <div className='w-full  bg-black/90 text-white pt-[40px] sa:pl-5 sx:px-[50px] pb-[40px]'>
             <div className='2ls:grid 2ls:grid-cols-3'>
                 <div className='flex flex-col  mr-[60px]'>
-                    <a href='/'><img onClick={() => window.scrollTo(0, 0)} src={Logo} width={200} alt="" /></a>
+                    <a href='/'><img onClick={handleMenu} src={Logo} width={200} alt="" /></a>
                     <div className='flex ms:hidden ml-[50px] mt-9 text-[25px] gap-4'>
                         <a href="https://ng.linkedin.com/company/tmbis-ng-trs" rel='noreferrer' target='_blank' className='underline'>
                             <FaLinkedin />
@@ -49,7 +61,7 @@ const Footer = () => {
             </div>
             <div className='text-white ms:flex items-center mt-[100px] xl:mr-0 md:mr-[50px]'>
                 <p className='text-[13px]  mr:text-[14px] text-white/80 text-center ms:text-start flex gap-1'>
-                    <FaRegCopyright className='text-[20px] mt-1 text-white/80' />
+                    <FaRegCopyright className='text-[20px] md:text-[16px] mt-1 text-white/80' />
                     2024 Throne Management and Business Institute Switzerland | Powered by Throne Management and Business Institute Switzerland
                 </p>
                 <div className='ms:flex hidden lg:flex-row flex-col ml-[120px] text-[25px] gap-4'>

@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react'
+import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -16,10 +16,12 @@ const Benefits = () => {
 
     return (
         <div className='bg-pink-50 w-full py-[90px]'>
-            <div className='ss:grid ss:grid-cols-2 mx-7'>
+            <div className='ss:grid ss:grid-cols-2 px-7'>
                 <img className='md:mt-0 ss:mt-[80px] mt-[-50px]' src={Girl} alt="" />
                 <div className='flex flex-col se:pl-[50px] st:pl-[px]'>
-                    <h1 data-aos="zoom-out" data-aos-delay="200" className='aos-init text-center mm:text-[40px] md:text-[30px] ss:text-[25px] se:text-[30px] st:text-[26px] text-[23px] font-serif ss:mt-0 mt-9'>Our Learning Benefits</h1>
+                    <h1 data-aos="zoom-out" data-aos-delay="200" className='aos-init text-center mm:text-[40px] md:text-[30px] ss:text-[25px] se:text-[30px] st:text-[26px] text-[23px] font-serif ss:mt-0 mt-9'>
+                        Our Learning Benefits
+                    </h1>
                     <div data-aos="zoom-in-up" data-aos-delay="300" className='aos-init flex mr:pt-4 se:pt-4 st:pt-5 pt-4 items-center'>
                         <FaCircleHalfStroke className='text-orange-400 mr:text-[30px] st:text-[23px] text-[20px] ss:text-[25px] se:text-[25px]' />
                         <p className='pl-5 mr:text-[25px] ss:text-[21px] se:text-[26px] st:text-[23px] text-[20px] se:text-left font-serif'>Self Paced Programs</p>

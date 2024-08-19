@@ -20,7 +20,7 @@ const About = () => {
     return (
         <div className='text-white'>
             <div className='flex bg-black text-center items-center justify-center'>
-                <img className='h-[80vh] object-cover md:object-fill opacity-65 w-full' src={abt} alt='' />
+                <img className='h-[100vh] object-cover md:object-fill opacity-65 w-full' src={abt} alt='' />
                 <h1 className='absolute top-[25%] md:text-[77px] sx:text-[60px] sa:text-[55px] text-[50px] font-semibold'>About Us</h1>
                 <p className='absolute top-[58%] md:text-[54px] sx:text-[40px] sa:text-[35px] text-[30px] font-semibold'>
                     <ReactTyped

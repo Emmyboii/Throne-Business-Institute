@@ -34,7 +34,7 @@ const ProgramOverview = () => {
     // }
 
     return (
-        <div className='py-[50px] px-[30px] bg-white'>
+        <div className='py-[50px] w-full px-[30px] bg-white'>
             <div className='flex flex-col xl:pr-[350px]'>
                 <h1 data-aos="fade-down" data-aos-delay="200" className='aos-init md:text-[40px] sm:text-[34px] se:text-[29px] text-[23px] font-medium font-serif'>Program Overview</h1>
                 <p data-aos="fade-up" data-aos-delay="400" className='aos-init mt-5'>
@@ -52,7 +52,7 @@ const ProgramOverview = () => {
                         <h1 className='text-center md:text-[20px] text-[19px] font-medium'>Professional Courses</h1>
                         <p className='pt-7'>Duration: 14 days</p>
                         <p className='pt-3 text-black/80'>
-                            Our Professional Courses are focused on the attributes of talented experts in various industies
+                            Our Professional Courses are focused on the attributes of talented experts in various industries
                             who shared their understanding on concepts of various in demand skills that can sky rocket your career from where
                             it is to where it should be.
                         </p>
@@ -62,7 +62,7 @@ const ProgramOverview = () => {
                             </button>
                         </a>
                         <a target="_blank" rel="noreferrer" href='https://wa.link/01wlzw'>
-                            <button data-aos="fade-up" data-aos-delay="200" className='text-orange-500 mt-[45px] md:mt-[95px] hidden sm:flex gap-3 absolute hover:scale-90 duration-500'>
+                            <button data-aos="fade-up" data-aos-delay="200" className='text-orange-500 mt-[45px] lg:mt-[110px] md:mt-[95px] xl:mt-[65px] hidden sm:flex gap-3 absolute hover:scale-90 duration-500'>
                                 Learn More <FaArrowRightLong className='mt-[6px]' />
                             </button>
                         </a>

@@ -107,7 +107,7 @@ const Program = () => {
               </p>
               <p className='pt-5 text-[18px]'><span className='text-[23px] font-medium'>Duration:</span> 14 days</p>
             </div>
-            <div className='se:flex se:flex-row ms:flex-col flex flex-col items-center justify-center text-center ms:justify-center se:justify-between  md:justify-between md:gap-[55%] ma:gap-[64%] ms:mt-0 mt-7'>
+            <div className='se:flex se:flex-row ms:flex-col flex flex-col items-center justify-center text-center ms:justify-center se:justify-between  md:justify-between md:gap-[55%] ma:gap-[64%] ms:gap-0 ms:mt-0 mt-7'>
               <div className='flex'>
                 <TbCurrencyNaira className='text-[43px] xl:ml-[330px] ms:ml-[200px] 2ls:ml-[252px]' /><p className='text-[30px] font-medium'>3,000</p>
               </div>
@@ -210,7 +210,7 @@ const Program = () => {
         </div>
 
         <div className='flex flex-col items-center'>
-          <h1 className='text-[30px] mt-9 font-bold text-red-600'>For More Programs</h1>
+          <h1 className='text-[30px] mt-9 font-bold text-red-600'>FOR MORE PROGRAMS</h1>
           <a target='_blank' rel='noreferrer' href="https://wa.link/01wlzw">
             <button className='p-4 md:block hidden items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
               Click Here
