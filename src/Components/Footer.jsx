@@ -1,6 +1,5 @@
 import {React, useState, useEffect} from 'react'
 import Logo from '../Images/TBI logo.png';
-import { FaRegCopyright } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -60,9 +59,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-white ms:flex items-center mt-[100px] xl:mr-0 md:mr-[50px]'>
-                <p className='text-[13px]  mr:text-[14px] text-white/80 text-center ms:text-start flex gap-1'>
-                    <FaRegCopyright className='text-[20px] md:text-[16px] mt-1 text-white/80' />
-                    2024 Throne Management and Business Institute Switzerland | Powered by Throne Management and Business Institute Switzerland
+                <p className='text-[15px]  mr:text-[16px] text-white/80 text-center ms:text-start flex'>
+                    © 2024 Throne Management and Business Institute Switzerland | Powered by Throne Management and Business Institute Switzerland
                 </p>
                 <div className='ms:flex hidden lg:flex-row flex-col ml-[120px] text-[25px] gap-4'>
                     <a href="https://ng.linkedin.com/company/tmbis-ng-trs" rel='noreferrer' target='_blank' className='underline'>

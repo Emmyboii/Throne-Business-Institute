@@ -20,7 +20,7 @@ const Contact = () => {
         <div className='bg-black'>
             <div data-aos="zoom-in" data-aos-delay="100" className='aos-init flex bg-black text-center justify-center'>
                 <img className='w-full opacity-30 h-[90vh] object-cover' src={Call} alt="" />
-                <div className='absolute ss:py-[130px] py-[160px] text-white'>
+                <div className='absolute ss:py-[200px] py-[160px] text-white'>
                     <h1 className='ss:text-[100px] se:text-[80px] text-[58px]'>Get In Touch</h1>
                 </div>
             </div>

@@ -3,32 +3,21 @@ import Back from '../Images/programBG.jpg';
 import ED2 from '../Images/girl.JPG';
 import PC2 from '../Images/PC3.png';
 import { TbCurrencyNaira } from "react-icons/tb";
-import { ReactTyped } from 'react-typed';
+// import { ReactTyped } from 'react-typed';
 
 const Program = () => {
   return (
-    <div>
-      <div className='flex flex-col text-white bg-black justify-center items-center text-center'>
-        <img className='w-full opacity-20 h-[90vh] object-cover' src={Back} alt="" />
-        <div className='absolute top-[30%] '>
-          <h1 className='lg:text-[70px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-[#be8957]'>
-            <ReactTyped
-              strings={['Choose Your Path to Success']}
-              typeSpeed={80}
-              backSpeed={90}
-              startDelay={300}
-              showCursor={false}
-              loop
-            />
-          </h1>
-        </div>
-        <div className='absolute top-[65%]'>
-          <p className='md:text-[30px] sy:text-[25px] text-[22px] xl:px-[230px] lg:px-[180px] md:px-[80px] sy:px-[43px] sd:px-[30px] px-[25px]'>
-            Explore our diverse range of programs designed to meet your career aspirations.
-          </p>
-        </div>
+    <div className='bg-black w-full h-[100%]'>
+      <img className='w-full opacity-20 h-[90vh] object-cover' src={Back} alt="" />
+      <div className='flex flex-col text-white justify-center absolute top-[34%] items-center text-center'>
+        <h1 className='lg:text-[70px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-[#be8957]'>
+          Choose Your Path to Success
+        </h1>
+        <p className='md:text-[30px] sy:text-[25px] text-[22px] xl:px-[230px] lg:px-[180px] md:px-[80px] sy:px-[43px] sd:px-[30px] pt-[55px] px-[25px]'>
+          Explore our diverse range of programs designed to meet your career aspirations.
+        </p>
       </div>
-      <div className='py-[60px] flex flex-col text-center justify-center'>
+      <div className='py-[60px] flex flex-col text-center justify-center bg-white'>
         <h1 className='lg:text-[30px] md:text-[28px] sm:text-[25px] sv:text-[23px] text-[22px] lg:px-[150px] md:px-[90px] sm:px-[60px] se:px-[40px]'>
           Our curriculum is developed by industry experts
           and aligned with global standards.

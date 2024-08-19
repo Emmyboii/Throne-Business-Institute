@@ -6,7 +6,7 @@ import EMM1 from '../Images/EMM1.jpg';
 import vision from '../Images/Vision1.png';
 import mission from '../Images/mission1.png';
 import abt from '../Images/abt.jpg';
-import { ReactTyped } from 'react-typed';
+// import { ReactTyped } from 'react-typed';
 
 const About = () => {
 
@@ -18,22 +18,15 @@ const About = () => {
     }, []);
 
     return (
-        <div className='text-white'>
-            <div className='flex bg-black text-center items-center justify-center'>
-                <img className='h-[100vh] object-cover opacity-65 w-full' src={abt} alt='' />
-                <h1 className='absolute top-[25%] md:text-[77px] sx:text-[60px] sa:text-[55px] text-[50px] font-semibold'>About Us</h1>
-                <p className='absolute top-[58%] md:text-[54px] sx:text-[40px] sa:text-[35px] text-[30px] font-semibold'>
-                    <ReactTyped
-                        strings={['Redefining Higher Education']}
-                        typeSpeed={90}
-                        backSpeed={120}
-                        startDelay={300}
-                        showCursor={false}
-                        loop
-                    />
+        <div className='text-white w-full h-[100%] bg-black'>
+            <img className='h-[100vh] object-cover opacity-30 w-full' src={abt} alt='' />
+            <div className='flex flex-col absolute left-[5%] top-[40%] '>
+                <h1 className=' md:text-[82px] sx:text-[64px] sa:text-[57px] text-[53px] font-semibold'>About Us</h1>
+                <p className=' md:text-[50px] sx:text-[47px] sa:text-[40px] text-[37px] pt-[24px] font-semibold'>
+                    Redefining Higher Education
                 </p>
             </div>
-            <div className='mv:grid mv:grid-cols-2 items-center flex flex-col justify-center bg-black/60 mv:pl-[50px] mv:pr-[20px] mv:py-[50px]'>
+            <div className='mv:grid mv:grid-cols-2 items-center flex flex-col justify-center bg-[#616060] mv:pl-[50px] mv:pr-[20px] mv:py-[50px]'>
                 <div>
                     <img className='mv:h-[120vh] h-[80vh] w-full lg:mt-0 mt-12 mv:block hidden mv:object-cover' src={EMM} alt="" />
                     <img className='mr:scale-95 scale-90 h-[80vh] w-full mt-12 mv:hidden block mv:object-cover' src={EMM1} alt="" />
@@ -82,7 +75,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-black/60 py-[50px]'>
+            <div className='bg-[#616060] py-[50px]'>
                 <h1 data-aos="fade-down" className='aos-init text-center text-[31px] sa:text-[35px] font-bold text-white pb-7'>OUR CORE VALUES</h1>
 
                 <div data-aos="fade-up" data-aos-delay="200" className='mv:mr-[350px] mx-[34px] sb:mx-[50px] se:mx-[80px] mv:ml-[50px] shadow-2xl shadow-black/60 px-[20px] pt-[22px] pb-[25px] rounded-md bg-slate-800 text-white'>
