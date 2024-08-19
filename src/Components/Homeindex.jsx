@@ -24,7 +24,7 @@ const Homeindex = () => {
     return (
         <div className='w-full'>
             <div className='flex h-[100vh] justify-center bg-blue-400'>
-                <img src={Background} alt="" className='w-full ma:object-fill object-cover opacity-50' />
+                <img src={Background} alt='' className='w-full ma:object-fill object-cover opacity-50' />
                 <div data-aos="fade-down" data-aos-delay="200" className='aos-init absolute top-[40%] sp:top-[50%] left-[4%]'>
                     <h1 className='xl:text-[65px] lg:text-[60px] md:text-[55px] sv:text-[49px] text-[48px] se:text-[57px] sp:text-[47px] font-bold text-white'>
                         Accelerate Your Future.
