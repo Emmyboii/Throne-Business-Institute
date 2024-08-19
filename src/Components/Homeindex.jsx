@@ -30,7 +30,7 @@ const Homeindex = () => {
                         Accelerate <br className='sp:hidden block'/> Your Future.
                     </h1>
                 </div>
-                <div className='absolute top-[67%] sp:top-[65%] xl:mr-[550px] 2la:mr-[450px] ms:mr-[400px] md:mr-[250px] sm:mr-[120px] sx:mr-[80px] left-[4%]'>
+                <div className='absolute top-[67%] sp:top-[69%] xl:mr-[550px] 2la:mr-[450px] ms:mr-[400px] md:mr-[250px] sm:mr-[120px] sx:mr-[80px] left-[4%]'>
                     <p className='xl:text-[28px] lg:text-[26px] sm:text-[23px] sv:text-[21px] text-[19px] font-semibold text-white'>
                         Earn globally recognized degrees, diplomas and certificates with unbeatable scholarship.
                     </p>

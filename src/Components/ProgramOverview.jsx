@@ -70,7 +70,7 @@ const ProgramOverview = () => {
                 </div>
 
                 <div className='border md:mx-0 sm:mx-[80px] se:mx-[60px] shadow-lg  rounded-lg '>
-                    <img className='h-[50vh] w-full hover:scale-y-105 rounded-t-lg duration-300 object-cover' src={EAD} alt="" />
+                    <img className='h-[50vh] w-full hover:scale-y-105 rounded-t-lg duration-300 object-cover lg:object-fill' src={EAD} alt="" />
                     <div className='pt-[20px] pb-[93px] px-7'>
                         <h1 className='text-center md:text-[20px] text-[19px] font-medium'>Executive Advance Diploma</h1>
                         <p className='pt-7'>Duration: One Month</p>
@@ -93,7 +93,7 @@ const ProgramOverview = () => {
                 </div>
 
                 <div className='border md:mx-0 sm:mx-[80px] se:mx-[60px] shadow-lg rounded-lg '>
-                    <img className='h-[50vh] w-full hover:scale-y-105 rounded-t-lg duration-300 object-' src={ED} alt="" />
+                    <img className='h-[50vh] w-full hover:scale-y-105 rounded-t-lg duration-300 object-fill' src={ED} alt="" />
                     <div className='pt-[20px] pb-[93px] px-7'>
                         <h1 className='text-center md:text-[20px] text-[19px] font-medium'>Associate Bachelor's Degree</h1>
                         <p className='pt-7'>Duration: Two Years</p>
