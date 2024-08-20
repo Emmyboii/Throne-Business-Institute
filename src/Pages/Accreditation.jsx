@@ -10,7 +10,7 @@ const Accreditation = () => {
         <div>
             <div className='bg-black flex text-center justify-center'>
                 <img className='max-h-dvh min-h-[50dvh] w-full opacity-40 object-cover' src={Combo} alt="" />
-                <h1 className='absolute lg:top-[26%] top-[30%] sy:top-[48%] sy:text-[55px] se:text-[47px] sv:text-[40px] st:text-[30px] text-[24px] font-bold font-serif text-white'>ACCREDITATIONS</h1>
+                <h1 className='absolute xl:top-[40%] lg:top-[32%] mp:top-[30%] top-[30%] sy:top-[48%] sy:text-[55px] se:text-[47px] sv:text-[40px] st:text-[30px] text-[24px] font-bold font-serif text-white'>ACCREDITATIONS</h1>
             </div>
             <div className='py-[60px] text-center'>
                 <div className='border-b-2 border-black/55'>
