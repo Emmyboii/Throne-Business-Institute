@@ -19,8 +19,8 @@ const About = () => {
 
     return (
         <div className='text-white w-full h-[100%] bg-black'>
-            <img className='h-[100vh] object-cover opacity-30 w-full' src={abt} alt='' />
-            <div className='flex flex-col absolute left-[5%] top-[40%] '>
+            <img className='max-h-dvh min-h-[50dvh] object-cover opacity-30 w-full' src={abt} alt='' />
+            <div className='flex flex-col absolute left-[5%] top-[20%] mp:top-[30%] lg:top-[40%] '>
                 <h1 className=' md:text-[82px] sx:text-[64px] sa:text-[57px] text-[53px] font-semibold'>About Us</h1>
                 <p className=' md:text-[50px] sx:text-[47px] sa:text-[40px] text-[37px] pt-[24px] font-semibold'>
                     Redefining Higher Education
@@ -28,7 +28,7 @@ const About = () => {
             </div>
             <div className='mv:grid mv:grid-cols-2 items-center flex flex-col justify-center bg-[#616060] mv:pl-[50px] mv:pr-[20px] mv:py-[50px]'>
                 <div>
-                    <img className='mv:h-[120vh] h-[80vh] w-full lg:mt-0 mt-12 mv:block hidden mv:object-cover' src={EMM} alt="" />
+                    <img className='max-h-dvh min-h-[60dvh] w-full lg:mt-0 mt-12 mv:block hidden mv:object-cover' src={EMM} alt="" />
                     <img className='mr:scale-95 scale-90 h-[80vh] w-full mt-12 mv:hidden block mv:object-cover' src={EMM1} alt="" />
                 </div>
                 <div>

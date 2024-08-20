@@ -8,8 +8,8 @@ import { TbCurrencyNaira } from "react-icons/tb";
 const Program = () => {
   return (
     <div className='bg-black w-full h-[100%]'>
-      <img className='w-full opacity-20 h-[100vh] object-cover' src={Back} alt="" />
-      <div className='flex flex-col text-white justify-center absolute top-[34%] items-center text-center'>
+      <img className='w-full opacity-20 max-h-dvh min-h-[50dvh] object-cover' src={Back} alt="" />
+      <div className='flex flex-col text-white justify-center absolute top-[19%] ss:top-[36%] md:top-[20%] mr:top-[24%] items-center text-center'>
         <h1 className='lg:text-[70px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-[#be8957]'>
           Choose Your Path to Success
         </h1>

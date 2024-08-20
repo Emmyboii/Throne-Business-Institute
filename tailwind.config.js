@@ -23,6 +23,7 @@ module.exports = {
         'mv': '900px',
         'mr': '800px',
         'ma': '850px',
+        'mp': '740px',
         'ss': '680px',
         'sy': '650px',
         'sp': '600px',
