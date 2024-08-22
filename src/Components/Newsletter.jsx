@@ -42,7 +42,7 @@ const Newsletter = () => {
     };
 
     return (
-        <div className='w-full md:py-16 py-10 px-4 bg-[#1e1d62] text-white'>
+        <div className='w-full md:py-16 py-10 px-4 bg-pink-50 text-black'>
             <div className='2la:grid 2la:grid-cols-5'>
                 <div className='2la:col-span-2 ml-5'>
                     <p className='font-serif se:text-[34.5px] xl:text-[36px] sb:text-[30px] text-[25px] leading-10'> Stay updated on our admissions and programs </p><br />
@@ -50,8 +50,8 @@ const Newsletter = () => {
                 </div>
                 <form onSubmit={handleSubmit} action="POST">
                     <div className='2la:col-span-3 sw:flex  mt-[50px]'>
-                        <input value={email} onChange={handleInput} ref={emailRef} className={!isEmailValid ? 'border-red-700 placeholder:text-red-700 py-[20px] pl-[35px] se:pr-[200px] st:pr-[50px] ml-5 rounded-lg bg-transparent border-2 outline-none' :'py-[20px] pl-[35px] se:pr-[200px] st:pr-[50px] ml-5 rounded-lg bg-transparent border-white border-2 outline-none'} type="text" name="Email" placeholder='Your Email Address' />
-                        <button type="submit" disabled={loading} className='text-center py-[16px] sw:py-[18px] sw:px-[40px] px-[30px] sw:mt-0 mt-8 ml-5 sw:ml-[30px] sw:mr-0 mr-10 rounded-lg sw:text-[16px] bg-white text-black'>Subscribe</button>
+                        <input value={email} onChange={handleInput} ref={emailRef} className={!isEmailValid ? 'border-red-700 placeholder:text-red-700 py-[20px] pl-[35px] se:pr-[200px] st:pr-[50px] ml-5 rounded-lg bg-transparent border-2 outline-none' :'py-[20px] pl-[35px] se:pr-[200px] st:pr-[50px] ml-5 rounded-lg bg-transparent border-black border-2 outline-none'} type="text" name="Email" placeholder='Your Email Address' />
+                        <button type="submit" disabled={loading} className='text-center py-[16px] sw:py-[18px] sw:px-[40px] px-[30px] sw:mt-0 mt-8 ml-5 sw:ml-[30px] sw:mr-0 mr-10 rounded-lg sw:text-[16px] bg-black text-white'>Subscribe</button>
                     </div>
                 </form>
             </div>

@@ -1,19 +1,27 @@
 import React from 'react'
 import Back from '../Images/programBG.jpg';
-import ED2 from '../Images/girl.JPG';
+import ED2 from '../Images/girl1.jpg';
 import PC2 from '../Images/PC3.png';
 import { TbCurrencyNaira } from "react-icons/tb";
-// import { ReactTyped } from 'react-typed';
+import { ReactTyped } from 'react-typed';
 
 const Program = () => {
   return (
     <div className='bg-black w-full h-[100%]'>
       <img className='w-full opacity-20 max-h-dvh min-h-[50dvh] object-cover' src={Back} alt="" />
       <div className='flex flex-col text-white justify-center absolute top-[19%] ss:top-[36%] md:top-[20%] mr:top-[24%] items-center text-center'>
-        <h1 className='lg:text-[70px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-[#be8957]'>
-          Choose Your Path to Success
+        <h1 className='lg:text-[70px] md:text-[55px] absolute sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-orange-400'>
+          <ReactTyped
+            strings={['Choose Your Path to Success']}
+            typeSpeed={130}
+            backSpeed={130}
+            backDelay={350}
+            startDelay={350}
+            showCursor={false}
+            loop
+          />
         </h1>
-        <p className='md:text-[30px] sy:text-[25px] text-[22px] xl:px-[230px] lg:px-[180px] md:px-[80px] sy:px-[43px] sd:px-[30px] pt-[55px] px-[25px]'>
+        <p className='md:text-[30px] relative sy:text-[25px] text-[22px] xl:px-[230px] lg:px-[180px] md:px-[80px] sy:px-[43px] sd:px-[30px] pt-[205px] px-[25px]'>
           Explore our diverse range of programs designed to meet your career aspirations.
         </p>
       </div>
@@ -23,7 +31,7 @@ const Program = () => {
           and aligned with global standards.
         </h1><br />
         <div className='sm:grid sm:grid-cols-2 md:gap-[85px] sm:gap-[55px] px-[70px]'>
-          <img className='rounded-lg sm:hover:scale-105 sv:hover:scale-100 sm:scale-100 sv:scale-95 scale-100 hover:scale-105 duration-500 object-cover' src={ED2} alt="" />
+          <img className='rounded-lg sm:hover:scale-105 sv:hover:scale-100 sm:scale-100 sv:scale-95 scale-100 h-[100%] hover:scale-105 duration-500 object-cover' src={ED2} alt="" />
           <img className='rounded-lg hover:scale-105 duration-500 object-cover hidden sm:block' src={PC2} alt="" />
         </div>
       </div>

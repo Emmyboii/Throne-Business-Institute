@@ -17,14 +17,14 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className='bg-black'>
+        <div className='bg-'>
             <div data-aos="zoom-in" data-aos-delay="100" className='aos-init flex bg-black text-center justify-center'>
                 <img className='w-full opacity-30 max-h-dvh min-h-[50dvh] object-cover' src={Call} alt="" />
                 <div className='absolute ss:py-[200px] mp:py-[120px] mr:py-[160px] py-[160px] text-white'>
                     <h1 className='ss:text-[100px] se:text-[80px] text-[58px]'>Get In Touch</h1>
                 </div>
             </div>
-            <div className='md:grid md:grid-cols-3 bg-black text-white sl:px-[50px] py-[80px]'>
+            <div className='md:grid md:grid-cols-3 bg-black/90 text-white sl:px-[50px] py-[80px]'>
                 <div className='flex flex-col text-center items-center px-9'>
                     <FaMapMarkerAlt className='text-[26px]' />
                     <p className='sl:text-[30px] text-[23px] font-semibold'>Visit Us</p>

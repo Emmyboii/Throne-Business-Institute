@@ -2,7 +2,7 @@ import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Girl from '../Images/girl.JPG';
+import Girl from '../Images/Benefit1.jpg';
 import { FaCircleHalfStroke } from "react-icons/fa6"
 
 const Benefits = () => {
@@ -17,7 +17,7 @@ const Benefits = () => {
     return (
         <div className='bg-pink-50 w-full py-[90px]'>
             <div className='ss:grid ss:grid-cols-2 px-7'>
-                <img className='md:mt-0 ss:mt-[80px] mt-[-50px]' src={Girl} alt="" />
+                <img className='md:mt-[50px] ss:mt-[80px] rounded-xl mt-[-50px]' src={Girl} alt="" />
                 <div className='flex flex-col se:pl-[50px] st:pl-[px]'>
                     <h1 data-aos="zoom-out" data-aos-delay="200" className='aos-init text-center mm:text-[40px] md:text-[30px] ss:text-[25px] se:text-[30px] st:text-[26px] text-[23px] font-serif ss:mt-0 mt-9'>
                         Our Learning Benefits

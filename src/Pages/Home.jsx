@@ -13,8 +13,8 @@ const Home = () => {
             <ProgramOverview />
             <AboutUs />
             <Benefits />
-            <Newsletter />
             <ContactUs />
+            <Newsletter />
         </div>
     )
 }

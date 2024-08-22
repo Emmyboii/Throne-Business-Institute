@@ -16,8 +16,8 @@ const AboutUs = () => {
     }, []);
 
     return (
-        <div className='w-full text-white bg-[#202020] py-[50px] flex flex-col items-center justify-center'>
-            <h1 className='  lg:text-[65px] md:text-[45px] st:text-[36px] text-[30px] font-semibold'>
+        <div className='w-full text-white bg-blue-600 py-[50px] flex flex-col items-center justify-center'>
+            <h1 className='text-orange-400 lg:text-[65px] md:text-[45px] st:text-[36px] text-[30px] font-semibold'>
                 About Us
             </h1>
             <div className='md:grid md:grid-cols-2 flex flex-col-reverse'>
@@ -39,7 +39,7 @@ const AboutUs = () => {
                         and making a positive impact on society.
                     </p><br />
                     <a rel="noreferrer" href='/about'>
-                        <p data-aos="fade-up" className=' text-orange-500 st:text-[20px] flex gap-3 mx-6 hover:scale-90 duration-500'>
+                        <p data-aos="fade-up" className=' text-orange-500 st:text-[20px] flex gap-3 hover:scale-90 duration-500'>
                             Learn More <FaArrowRightLong className='mt-[6px]' />
                         </p>
                     </a>
