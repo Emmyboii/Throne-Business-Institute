@@ -4,17 +4,24 @@ import Benefits from '../Components/Benefits';
 import ContactUs from '../Components/ContactUs';
 import AboutUs from '../Components/AboutUs';
 import Newsletter from "../Components/Newsletter";
-import ProgramOverview from '../Components/ProgramOverview';
+import Program from './Program';
+import Quote from '../Components/Quote';
+import Accreditation from './Accreditation';
 
 const Home = () => {
+    
     return (
-        <div className='w-full overflow-auto'>
+        <div className='w-full'>
             <Homeindex />
-            <ProgramOverview />
             <AboutUs />
+            <Quote />
+            <Program />
             <Benefits />
             <ContactUs />
             <Newsletter />
+            <Accreditation />
+
+            
         </div>
     )
 }

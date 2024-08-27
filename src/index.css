@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide > div{
-    margin: 0 15px;
+* {
+    scroll-behavior: smooth;
 }
 
-/* @media (min-width: 768px){
-    .slick-slide > div{
-        margin: 0;
-    }
-} */
+
+select {
+    background-color: #c3f0c6;
+    border: #b2eeac 2px solid;
+}
+
+select>option {
+    background-color: rgb(241, 220, 224);
+    border-radius: 15px;
+}

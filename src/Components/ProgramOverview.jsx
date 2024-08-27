@@ -5,10 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import PC from '../Images/PC.jpg';
 import EAD from '../Images/EAD.jpg';
 import EAD2 from '../Images/EAD2.jpg';
-import ED from '../Images/ED.jpg';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import ED from '../Images/ED2.JPG';
 
 const ProgramOverview = () => {
 
@@ -19,43 +16,6 @@ const ProgramOverview = () => {
         });
     }, []);
 
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 700,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        cssEase: "linear",
-        responsive: [
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 650,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplaySpeed: 4000,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    autoplaySpeed: 4000,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    };
 
 
     return (
@@ -69,10 +29,9 @@ const ProgramOverview = () => {
                 </p>
             </div>
 
-            <div className='mx-1 pt-10'>
-                <Slider {...settings} >
+            <div className='mx-1 gap-6 pt-10'>
                     <div className='border shadow-lg rounded-lg'>
-                        <img className='max-h-[50dvh] min-h-[50dvh] w-full  object-fill hover:scale-y-105 rounded-t-lg duration-300' src={PC} alt="" />
+                        <img className='max-h-[50dvh] min-h-[50dvh] w-full  object-cover lg:object-cover xl:object-fill hover:scale-y-105 rounded-t-lg duration-300' src={PC} alt="" />
                         <div className='pt-[20px] px-3 sx:px-7'>
                             <h1 className='text-center md:text-[20px] text-[19px] font-medium'>Professional Courses</h1>
                             <p className='pt-7 text-black/80'>Duration: 14 days</p>
@@ -87,7 +46,7 @@ const ProgramOverview = () => {
                                 </button>
                             </a>
                             <a target="_blank" rel="noreferrer" href='https://wa.link/01wlzw'>
-                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 sm:mt-[114px] md:mt-[124px] ma:mt-[124px] mp:mt-[160px] mr:mt-[123px] mv:mt-[123px] lg:mt-[130px] xl:mt-[124px] 2lq:mt-[100px] mb-7 hidden sm:flex gap-3 hover:scale-90 duration-500'>
+                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 sm:mt-[114px] md:mt-[124px] ma:mt-[124px] mp:mt-[160px] mz:mt-[110px] mz:mb-[54px] mr:mt-[123px] mv:mt-[123px] lg:mt-[130px] xl:mt-[124px] 2lq:mt-[100px] mb-7 hidden sm:flex gap-3 hover:scale-90 duration-500'>
                                     Learn More <FaArrowRightLong className='mt-[6px]' />
                                 </button>
                             </a>
@@ -95,7 +54,7 @@ const ProgramOverview = () => {
                     </div>
 
                     <div className='border shadow-lg rounded-lg'>
-                        <img className='min-h-[50dvh] max-h-[50dvh] w-full hover:scale-y-105 rounded-t-lg duration-300 object-cover lg:object-cover xl:object-fill' src={EAD} alt="" />
+                        <img className='min-h-[50dvh] max-h-[50dvh] w-full hover:scale-y-105 rounded-t-lg duration-300 object- md:object-cover xl:object-fill' src={EAD} alt="" />
                         <div className='pt-[20px] px-3 sx:px-7'>
                             <h1 className='text-center md:text-[20px] text-[19px] font-medium'>Executive Advance Diploma</h1>
                             <p className='pt-7 text-black/80'>Duration: One Month</p>
@@ -105,12 +64,12 @@ const ProgramOverview = () => {
                                 broader field of management that stimulates and develops critical thinking and creatvie problem-solving.
                             </p>
                             <a target='_blank' rel="noreferrer" href='https://wa.me/p/4197348707047390/2349012104873'>
-                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 flex gap-3 md:hidden st:mt-[80px] mt-[72px] mb-[40px] sa:mt-[56px] sv:mt-[80px] st:mb-10 hover:scale-90 duration-500'>
+                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 flex gap-3 md:hidden st:mt-[80px] mp:mt-[101px] mt-[72px] mb-[40px] sa:mt-[56px] sv:mt-[80px] st:mb-10 hover:scale-90 duration-500'>
                                     Learn More <FaArrowRightLong className='mt-[6px]' />
                                 </button>
                             </a>
                             <a target='_blank' rel="noreferrer" href='https://wa.link/01wlzw'>
-                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 hidden 2lq:mt-[52px] lg:mt-[82px] mv:mt-[75px] md:mt-[52px] xl:mt-[75px] mb-7 md:flex gap-3 hover:scale-90 duration-500'>
+                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 hidden 2lq:mt-[52px] lg:mt-[82px] mv:mt-[75px] md:mt-[52px] mz:mt-[60px] mz:mb-[55px] xl:mt-[75px] mb-7 md:flex gap-3 hover:scale-90 duration-500'>
                                     Learn More <FaArrowRightLong className='mt-[6px]' />
                                 </button>
                             </a>
@@ -118,7 +77,7 @@ const ProgramOverview = () => {
                     </div>
 
                     <div className='border shadow-lg rounded-lg'>
-                        <img className=' max-h-[50dvh] min-h-[50dvh] w-full hover:scale-y-105 rounded-t-lg duration-300 lg:object-cover xl:object-fill' src={ED} alt="" />
+                        <img className=' max-h-[50dvh] min-h-[50dvh] w-full hover:scale-y-105 rounded-t-lg duration-300 object-cover lg:object-cover xl:object-fill' src={ED} alt="" />
                         <div className='pt-[20px] px-3 sx:px-7'>
                             <h1 className='text-center md:text-[20px] text-[19px] font-medium'>Associate Bachelor's Degree</h1>
                             <p className='pt-7 text-black/80'>Duration: Two Years</p>
@@ -128,12 +87,12 @@ const ProgramOverview = () => {
                                 values and effective strategies that can only foster progress in the latest management issues and challenges
                             </p>
                             <a target='_blank' rel="noreferrer" href='https://wa.me/p/4197348707047390/2349012104873'>
-                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 flex gap-3 md:hidden st:mt-[80px] mt-[43px] mb-[40px] sa:mt-[56px] sv:mt-[80px] st:mb-10 hover:scale-90 duration-500'>
+                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 flex gap-3 md:hidden st:mt-[80px] mp:mt-[101px] mt-[43px] mb-[40px] sa:mt-[56px] sv:mt-[80px] st:mb-10 hover:scale-90 duration-500'>
                                     Learn More <FaArrowRightLong className='mt-[6px]' />
                                 </button>
                             </a>
                             <a target='_blank' rel="noreferrer" href='https://wa.link/01wlzw'>
-                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 hidden md:flex gap-3 2lq:mt-[52px] mv:mt-[75px] md:mt-[52px] lg:mt-[82px] xl:mt-[75px] mb-7 hover:scale-90 duration-500'>
+                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 hidden md:flex gap-3 2lq:mt-[52px] mv:mt-[75px] md:mt-[52px] mz:mt-[60px] mz:mb-[55px] lg:mt-[82px] xl:mt-[75px] mb-7 hover:scale-90 duration-500'>
                                     Learn More <FaArrowRightLong className='mt-[6px]' />
                                 </button>
                             </a>
@@ -156,13 +115,12 @@ const ProgramOverview = () => {
                                 </button>
                             </a>
                             <a target="_blank" rel="noreferrer" href='https://wa.link/01wlzw'>
-                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 hidden sm:flex gap-3 xl:my-7 sm:my-[47px] mv:my-[40px] lg:my-[43px] my-7 hover:scale-90 duration-500'>
+                                <button data-aos="fade-up" data-aos-delay="200" className='text-orange-400 hidden sm:flex gap-3 xl:my-[42px] sm:my-[47px] mv:my-[40px] lg:my-[43px] my-7 hover:scale-90 duration-500'>
                                     Learn More <FaArrowRightLong className='mt-[6px]' />
                                 </button>
                             </a>
                         </div>
                     </div>
-                </Slider >
             </div>
         </div>
     )
