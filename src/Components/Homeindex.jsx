@@ -54,7 +54,7 @@ const Homeindex = () => {
                 </Slider>
             </div>
             <div className='flex'>
-                <div data-aos="fade-down" data-aos-delay="200" className='aos-init absolute top-[27%] flex flex-col  justify-center sp:top-[37%] mp:top-[47%] md:top-[37%] mr:top-[35%] ma:top-[50%] mj:top-[35%] mk:top-[50%] mv:top-[32%] mw:top-[45%] lg:top-[38%] 2la:top-[48%] xl:top-[44%] 2lq:top-[50%] left-[4%]'>
+                <div data-aos="fade-down" data-aos-delay="200" className='aos-init absolute top-[24%] flex flex-col justify-center sp:top-[37%] mp:top-[47%] md:top-[37%] mr:top-[35%] ma:top-[50%] mj:top-[35%] mk:top-[50%] mv:top-[32%] mw:top-[45%] lg:top-[38%] 2la:top-[48%] xl:top-[44%] 2lq:top-[50%] left-[4%]'>
                     <h1 className=' lg:text-[60px] md:text-[55px] leading-[56px] sv:text-[49px] text-[48px] se:text-[57px] sp:text-[47px] font-bold text-white'>
                         Accelerate <br className='sp:hidden block' /> Your Future.
                     </h1>
