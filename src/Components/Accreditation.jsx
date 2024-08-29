@@ -5,8 +5,9 @@ import CAR from '../Images/CAR.jpg';
 
 
 const Accreditation = () => {
+
     return (
-        <div id='accreditation'>
+        <div id='accreditation' className='bg-pink-50'>
             <div className='bg-black flex text-center justify-center'>
                 <h1 className='py-10 sy:text-[55px] se:text-[47px] sv:text-[40px] st:text-[30px] text-[24px] font-bold font-serif text-white'>ACCREDITATIONS</h1>
             </div>
@@ -34,7 +35,7 @@ const Accreditation = () => {
                                 (from pre- school to higher education).
                             </p>
                         </div>
-                        <img className='border-black border-4 xl:ml-[55px] sm:scale-100 se:scale-90 scale-90 sm:object-fill object-cover h-[100vh]' src={MEC} alt="" />
+                        <img className='border-black border-4 xl:ml-[55px] sm:scale-100 se:scale-90 scale-90 h-[100vh]' src={MEC} alt="" />
                     </div>
                 </div>
 

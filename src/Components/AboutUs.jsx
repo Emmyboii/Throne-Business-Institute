@@ -8,17 +8,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const AboutUs = () => {
 
-    window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-    }
 
     const [prog, setprog] = useState(false)
 
     const handleProg = () => {
         setprog(!prog)
-        // if (prog1 === true) {
-        //   setprog2(prog2)
-        // }
     }
 
     useEffect(() => {
@@ -30,8 +24,8 @@ const AboutUs = () => {
     }, []);
 
     return (
-        <div id='about' className='w-full text-white bg-blue-600 py-[50px] flex flex-col items-center justify-center'>
-            <h1 className='text-orange-400 lg:text-[65px] md:text-[45px] st:text-[36px] text-[30px] font-semibold'>
+        <div id='about' className='w-full text-white bg-blue-600 pt-[10px] flex flex-col items-center justify-center'>
+            <h1 className='text-orange-400 lg:text-[65px] md:text-[48px] st:text-[41px] text-[35px] font-semibold'>
                 About Us
             </h1>
             <div className={prog ? 'flex flex-col-reverse' : 'md:grid md:grid-cols-2 flex flex-col-reverse'}>
@@ -39,24 +33,24 @@ const AboutUs = () => {
                     <p data-aos="fade-down" data-aos-delay="200" className={prog ? 'hidden' : 'xl:px-[50px] md:pl-[30px] aos-init sm:text-[30px] st:text-[26px] text-[22px] text-center md:text-left mt-0 st:mt-5 lg:mt-1 font-medium'}>
                         What We Represent
                     </p>
-                    <p className='xl:px-[50px] md:pl-[30px] lg:text-[21px] st:text-[17px] sm:text-[18px] text-[17px] mx-6 md:mx-0 mt-4 font-medium leading-6 st:leading-7'>
+                    <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] mx-6 md:mx-0 mt-4 font-medium leading-6 st:leading-7'>
                         Throne Management and Business Institute Switzerland (TMBI) is a pioneering educational
                         institution dedicated to empowering individuals with the knowledge and skills necessary to
                         succeed in the dynamic global landscape. Founded in 2018, TMBI is the first WhatsApp-based
                         peer-to-peer educational institute in Nigeria, offering a unique and accessible approach to
                         learning.
                     </p>
-                    <p className='xl:px-[50px] md:pl-[30px] lg:text-[21px] st:text-[17px] sm:text-[18px] mx-6 md:mx-0 se:pt-8 pt-4 font-medium leading-6 st:leading-7'>
+                    <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] mx-6 md:mx-0 se:pt-8 pt-4 font-medium leading-6 st:leading-7'>
                         Our values include innovation, accessibility, excellence, integrity, and impact. We believe in
                         embracing innovation to deliver engaging and effective learning experiences, making education
                         accessible to all, providing the highest quality education, upholding the highest ethical standards,
                         and making a positive impact on society.
                     </p><br />
-                    <p onClick={handleProg} className={prog ? 'hidden' : 'xl:px-[50px] md:pl-[30px] mx-6 text-orange-500 st:text-[20px] flex gap-3 cursor-pointer duration-500'}>
+                    <p onClick={handleProg} className={prog ? 'hidden' : 'md:pl-0 xl:pl-[30px] pb-3 mx-6 text-orange-500 st:text-[20px] flex gap-3 cursor-pointer duration-500'}>
                         Learn More <FaArrowRightLong className='mt-[6px]' />
                     </p>
                     <div className={prog ? 'block' : 'hidden'}>
-                        <p className='xl:px-[50px] md:pl-[30px] mx-6 pt-4 pb-9 lg:text-[21px] st:text-[17px] sm:text-[18px] text-[17px] font-medium leading-6 st:leading-7'>
+                        <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] pb-9 mx-6 md:mx-0  font-medium leading-6 st:leading-7'>
                             We are committed to democratizing education by providing high-quality, affordable, and flexible programs that cater to
                             the diverse needs of learners across Nigeria. Our goal is to bridge the gap between traditional education and the
                             demands of the modern world by leveraging technology to deliver exceptional learning experiences.

@@ -1,66 +1,60 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState } from 'react'
 // import { Link } from 'react-router-dom'
 import Logo from '../Images/TBI logo.png'
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from 'react-icons/ai'
 
 const Navbar = () => {
-    const [menu, setMenu] = useState(
-        JSON.parse(localStorage.getItem('menu')) || 'home');
     const [nav, setNav] = useState(false);
-
 
     const handleNav = () => {
         setNav(!nav);
     }
 
+    const [fix, setFix] = useState(false)
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [menu])
+    function setFixed() {
+        if (window.scrollY > 0) {
+            setFix(true)
+        } else {
+            setFix(false)
+        }
+    }
 
-    // useEffect(() => {
-    //     const menu = JSON.parse(localStorage.getItem('menu'));
-    //     if (menu) {
-    //         setMenu(menu);
-    //     }
-    // }, []);
+    window.addEventListener("scroll", setFixed)
 
-    useEffect(() => {
-        localStorage.setItem('menu', JSON.stringify(menu));
-    }, [menu]);
 
     return (
-        <div className=''>
+        <div>
             <div className='top-0 w-full flex justify-between p-[7px]'>
                 <div className='flex items-center ml-8'>
-                    <a href='/' ><img onClick={() => setMenu('home')} src={Logo} alt='' className='xl:w-[150px] lg:w-[140px] md:w-[120px] w-[100px]' /></a>
+                    <a href='/' ><img src={Logo} alt='' className='xl:w-[150px] lg:w-[140px] md:w-[120px] w-[100px]' /></a>
                 </div>
                 <ul className='hidden lg:flex xl:text-[21px] lg:text-[17px] ml-[30%] gap-[25px] items-center'>
                     <a href='/'>
-                        <li onClick={() => setMenu('home')} className='active:scale-95 hover:text-orange-300'>
+                        <li className='active:scale-95 hover:text-orange-300'>
                             Home
                         </li>
                     </a>
                     <a href='#about'>
-                        <li onClick={() => setMenu('about')} className='active:scale-95 hover:text-orange-300'>
+                        <li className='active:scale-95 hover:text-orange-300'>
                             About Us
                         </li>
                     </a>
                     <a href='#programs'>
-                        <li onClick={() => setMenu('program')} className='active:scale-95 hover:text-orange-300'>
+                        <li className='active:scale-95 hover:text-orange-300'>
                             Programs
                         </li>
                     </a>
                     <a href='#accreditation'>
-                        <li onClick={() => setMenu('Accredite')} className='active:scale-95 hover:text-orange-300'>
+                        <li className='active:scale-95 hover:text-orange-300'>
                             Accreditation
                         </li>
                     </a>
                 </ul>
                 <div className='md:flex md:items-center hidden'>
                     <a href='#contact'>
-                        <button onClick={() => setMenu('Contact')} className='bg-blue-400  text-white active:scale-95 mt-2  py-3 px-6 rounded-lg outline-none active:bg-blue-800'>
+                        <button className='bg-blue-400  text-white active:scale-95 mt-2  py-3 px-6 rounded-lg outline-none active:bg-blue-800'>
                             Contact Us
                         </button>
                     </a>
@@ -68,6 +62,13 @@ const Navbar = () => {
                 <div onClick={handleNav}>
                     <HiMenuAlt3 className='md:flex lg:hidden text-[30px] mt-[12px] md:mt-[20px] mr-7 cursor-pointer' />
                 </div>
+            </div>
+
+            <div className={fix ? 'top-0 bg-blue-800 text-white fixed w-full z-50 xl:hidden st:flex py-3 md:pl-[50px] sm:pl-[40px] sd:px-[27px] px-[13.5px] md:pr-[70px] sm:pr-[40px] text-center items-center justify-between' : 'bg-blue-800 text-white fixed w-full z-50 xl:hidden st:flex py-3 md:pl-[50px] sm:pl-[40px] sd:px-[27px] px-[13.5px] md:pr-[70px] sm:pr-[40px] text-center items-center justify-between'}>
+                <p className='md:text-[30px] sm:text-[25.5px] sd:text-[21px] st:text-[16.6px] sl:text-[22px] text-[18px] font-semibold'>READY TO GET STARTED?</p>
+                <a href="#apply">
+                    <button className='bg-orange-400 sm:px-5 sd:px-3 px-[8.6px] st:mt-0 mt-2 py-3 rounded-lg'>APPLY NOW</button>
+                </a>
             </div>
 
             {nav ? <div onClick={handleNav} className='bg-black/80 lg:hidden w-full fixed h-screen z-10 top-0 left-0'></div> : ''}
@@ -80,25 +81,27 @@ const Navbar = () => {
                 <nav className='lg:hidden flex flex-col'>
                     <ul className='flex flex-col p-4'>
                         <a href='/' onClick={handleNav}>
-                            <li onClick={() => setMenu('home')} className='p-3 rounder-xl text-white active:scale-95 hover:text-red-600'>
+                            <li className='p-3 rounder-xl text-white active:scale-95 hover:text-orange-400'>
                                 Home
                             </li>
                         </a>
                         <a href='#about' onClick={handleNav}>
-                            <li onClick={() => setMenu('about')} className='p-3  rounded-xl text-white active:scale-95 hover:text-red-600'>
+                            <li className='p-3  rounded-xl text-white active:scale-95 hover:text-orange-400'>
                                 About Us
                             </li>
                         </a>
                         <a href='#programs' onClick={handleNav}>
-                            <li onClick={() => setMenu('program')} className='p-3  rounded-xl text-white active:scale-95 hover:text-red-600'></li>
+                            <li className='p-3  rounded-xl text-white active:scale-95 hover:text-orange-400'>
+                                Programs
+                            </li>
                         </a>
                         <a href='#accreditation' onClick={handleNav}>
-                            <li onClick={() => setMenu('Accredite')} className='p-3  rounded-xl text-white active:scale-95 hover:text-red-600'>
+                            <li className='p-3  rounded-xl text-white active:scale-95 hover:text-orange-400'>
                                 Accreditation
                             </li>
                         </a>
                         <a href='#contact' onClick={handleNav}>
-                            <button onClick={() => setMenu('Contact')} className='bg-blue-400 text-white active:scale-95 mt-2 w-full py-3 px-6 rounded-lg outline-none active:bg-blue-800'>
+                            <button className='bg-blue-400 text-white active:scale-95 mt-2 w-full py-3 px-6 rounded-lg outline-none active:bg-blue-500'>
                                 Contact Us
                             </button>
                         </a>

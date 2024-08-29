@@ -5,14 +5,3 @@
 * {
     scroll-behavior: smooth;
 }
-
-
-select {
-    background-color: #c3f0c6;
-    border: #b2eeac 2px solid;
-}
-
-select>option {
-    background-color: rgb(241, 220, 224);
-    border-radius: 15px;
-}

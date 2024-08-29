@@ -1,18 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
-import Footer from "./Components/Footer";
+import Admin from "./Pages/Admin";
 
 function App() {
   return (
     <div className="overflow-hidden">
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
 
     </div>

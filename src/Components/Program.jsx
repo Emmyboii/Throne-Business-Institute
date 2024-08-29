@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import Back from '../Images/Screenshot.png';
+import Back2 from '../Images/graduate.jpg';
 import ED2 from '../Images/girl1.jpg';
 import PC2 from '../Images/PC3.png';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
@@ -7,6 +8,7 @@ import { GoDotFill } from "react-icons/go";
 // import { ReactTyped } from 'react-typed';
 
 const Program = () => {
+
 
   const [prog1, setprog1] = useState(false)
   const [prog2, setprog2] = useState(false)
@@ -50,8 +52,8 @@ const Program = () => {
 
   return (
     <div id='programs' className='w-full h-[100%]'>
-      <div className='flex text-white justify-center items-center text-center bg-[#01022e]'>
-        <div className='z-10 pl-7'>
+      <div className='flex mo:flex-row flex-col text-white justify-center items-center text-center bg-[#01022e]'>
+        <div className='z-10 mo:pl-7 mo:pr-0 mo:py-0 ma:pl-9 ma:pr-9 py-[70px]'>
           <h1 className='lg:text-[40px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-orange-500'>
             Choose Your Path to Success
           </h1>
@@ -59,8 +61,9 @@ const Program = () => {
             Explore our diverse range of programs designed to meet your career aspirations.
           </p>
         </div>
-        <img className='w-[50%] scale-y-[1.17] xl:scale-y-100 outline-none border-none' src={Back} alt="" />
+        <img className='w-[50%] hidden mo:block scale-y-[1.05] mo:scale-y-100 outline-none border-none' src={Back} alt="" />
       </div>
+      <img className='w-full h-[40vh] mp:h-[60vh] object- mo:hidden block mo:scale-y-100 outline-none border-none' src={Back2} alt="" />
       <div className='py-[60px] flex flex-col text-center justify-center bg-white'>
         <h1 className='lg:text-[30px] md:text-[28px] sm:text-[25px] sv:text-[23px] text-[22px] lg:px-[150px] md:px-[90px] sm:px-[60px] se:px-[40px]'>
           Our curriculum is developed by industry experts
@@ -73,13 +76,13 @@ const Program = () => {
       </div>
       <div className='bg-blue-500 py-[60px]'>
         <div>
-          <h1 className='text-center text-white font-extrabold text-[50px]'>OUR PROGRAMS:</h1>
+          <h1 className='text-center text-white font-extrabold sa:text-[39px] st:text-[37.5px] text-[34.7px] md:text-[50px]'>OUR PROGRAMS:</h1>
         </div>
 
-        <div className='mx-[280px] hover:scale-105 duration-500 text-white bg-[#2a70cc] text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 px-[40px] my-11 py-[20px] font-serif'>
-            <h1 className='text-[22px] text-center sb:text-[26px] sa:text-[30px] sy:text-[40px] mt-5 text-[#ff9633] font-semibold'>
-              Associate Degree's (B.sc - AD)
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a70cc] my-[90px] text-[17.5px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px] font-serif'>
+            <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
+              Associate Degree's (B.Sc - AD)
             </h1>
             <p className='pt-3 leading-[30px]'>
               Our Associate Degree Bachelor's Program is designed to enable you understand what it takes to be ever prepared in a ever
@@ -91,7 +94,7 @@ const Program = () => {
             </p>
 
             <div className={prog1 ? 'block pt-4' : 'pt-4 hidden'}>
-              <ul className='text-center font-semibold'>
+              <ul className='text-center sv:font-semibold font-[550]'>
                 <li className='pt-2'>High-quality education at a fraction of the cost.</li>
                 <li className='pt-2'>Learn at your own pace, from anywhere in the world.</li>
                 <li className='pt-2'>Earn a degree valued worldwide.</li>
@@ -145,33 +148,35 @@ const Program = () => {
               </ul>
 
               <p className='pt-7'>
-                <span className='font-bold'>ACCREDITATION:</span> Our programs are accredited by the Switzerland Education Board, Carcao
+                <span className='font-bold'>ACCREDITATION:</span><br /> Our programs are accredited by the Switzerland Education Board, Carcao
                 Educational Board, Central African Republic Education Board, Chad Educational Board PIET
                 and recognized by the Nigerian University Council.
               </p>
               <p className='pt-6'>
-                <span className='font-bold'>PARTNERSHIPS:</span> We partner with SOBAT Business School, Switzerland, IICSE University, USA,
+                <span className='font-bold'>PARTNERSHIPS:</span><br /> We partner with SOBAT Business School, Switzerland, IICSE University, USA,
                 High Flyer University, USA, ESAE University, Benin, and Cape Coast University, West End
                 College University.
               </p>
 
-              <div className='pt-7'>
-                <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span> 2 year and 3 year programs</p>
+              <div className='pt-7 text-center'>
+                <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> 2 year and 3 year programs</p>
                 <p className='pt-4'>
-                  <span className='font-bold'>TUITION: </span>
-                  <span className='text-center'>CHF 2,660 (Apply now for scholarship and pay as little as 12,000/month or 60,000/6-months, or 120,000/year</span>
+                  <span className='font-bold'>TUITION: </span><br />
+                  <span className='text-center'>CHF 2,660 (Apply now for scholarship and pay as little as 12,000/month or 60,000/6-months, or 120,000/year)</span>
                 </p>
               </div>
               <div className='text-center mt-8'>
-                <button className='bg-gradient-to-r from-orange-500 to-black/60 p-4 rounded-full'>APPLY NOW</button>
+                <a href="#apply">
+                  <button className='bg-gradient-to-r from-orange-500 to-black/60 p-4 rounded-full'>APPLY NOW</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='mx-[280px] hover:scale-105 duration-500 text-black bg-white my-[70px] text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 px-[40px] pt-[22px] pb-[30px] font-serif'>
-            <h1 className='text-[22px] text-center sb:text-[26px] sa:text-[30px] sy:text-[40px] mt-5 text-[#ff9633] font-semibold'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white text-[17.5px] my-[102px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px] font-serif'>
+            <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
               Executive MBA Program
             </h1>
             <div className='pt-3 leading-[30px]'>
@@ -190,19 +195,20 @@ const Program = () => {
             <div className={prog2 ? 'block pt-7 leading-[33px]' : 'pt-5 hidden'}>
               <h1 className='text-center font-bold'>IT’S TIME TO REACH FOR GREATER</h1>
               <ul>
-                <li className='flex gap-2'><GoDotFill className='mt-2' /> Gain access to higher-paying positions and leadership roles.</li>
-                <li className='flex gap-2'><GoDotFill className='mt-2' /> Increase your earning power through advanced business knowledge and skills.</li>
-                <li className='flex gap-2'><GoDotFill className='mt-2' /> Explore new industries and sectors with a broader range of career opportunities.</li>
-                <li className='flex gap-2'><GoDotFill className='mt-2' /> Develop critical thinking and strategic planning skills.</li>
-                <li className='flex gap-2'><GoDotFill className='mt-2' /> Learn to inspire and motivate teams to achieve organizational goals.</li>
-                <li className='flex gap-2'><GoDotFill className='mt-2' /> Connect with like-minded professionals and build valuable relationships.</li>
-                <li className='flex gap-2'><GoDotFill className='mt-2' /> Gain a global understanding of business practices and cultural nuances.</li>
+                <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Gain access to higher-paying positions and leadership roles.</li>
+                <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Increase your earning power through advanced business knowledge and skills.</li>
+                <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Explore new industries and sectors with a broader range of career opportunities.</li>
+                <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Develop critical thinking and strategic planning skills.</li>
+                <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Learn to inspire and motivate teams to achieve organizational goals.</li>
+                <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Connect with like-minded professionals and build valuable relationships.</li>
+                <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Gain a global understanding of business practices and cultural nuances.</li>
               </ul>
 
-              <p className='pt-7 font-bold'>
+              <p className='pt-7 font-bold text-[16px]'>
                 Our 2-Year MBA program offers a rigorous yet flexible learning experience that will help
-                you achieve your career aspirations. <br />OUR MBA CONCENTRATIONS INCLUDE:
+                you achieve your career aspirations.
               </p>
+              <p className='pt-5 text-[16px] font-bold'>OUR MBA CONCENTRATIONS INCLUDE:</p>
 
               <ul className='pt-3'>
                 <li className='flex items-center gap-2 pt-4'><MdOutlineKeyboardDoubleArrowRight className='text-orange-400 text-[30px]' />
@@ -235,36 +241,38 @@ const Program = () => {
               </ul>
 
               <p className='pt-7'>
-                <span className='font-bold'>ACCREDITATION:</span> Our programs are accredited by the Switzerland Education Board, Carcao
+                <span className='font-bold'>ACCREDITATION:</span><br /> Our programs are accredited by the Switzerland Education Board, Carcao
                 Educational Board, Central African Republic Education Board, Chad Educational Board PIET
                 and recognized by the Nigerian University Council.
               </p>
               <p className='pt-6'>
-                <span className='font-bold'>PARTNERSHIPS:</span> We partner with SOBAT Business School, Switzerland, IICSE University, USA,
+                <span className='font-bold'>PARTNERSHIPS:</span><br /> We partner with SOBAT Business School, Switzerland, IICSE University, USA,
                 High Flyer University, USA, ESAE University, Benin, and Cape Coast University, West End
                 College University.
               </p>
 
-              <div className='pt-7'>
-                <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span> 12 to 24 months</p>
+              <div className='pt-7 text-center'>
+                <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> 12 to 24 months</p>
                 <p className='pt-4'>
-                  <span className='font-bold'>TUITION:</span> CHF 12,660 (Apply now for a scholarship and pay as little as 59,000/month)</p>
+                  <span className='font-bold'>TUITION:</span><br /> CHF 12,660 (Apply now for a scholarship and pay as little as 59,000/month)</p>
               </div>
               <div className='text-center mt-8'>
-                <button className='bg-gradient-to-r from-blue-500 to-black/60 p-4 rounded-full'>APPLY NOW</button>
+                <a href="#apply">
+                  <button className='bg-gradient-to-r from-blue-500 to-black/60 p-4 rounded-full'>APPLY NOW</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         <div>
-          <h1 className='text-center text-white font-extrabold text-[50px]'>OTHER PROGRAMS:</h1>
+          <h1 className='text-center text-white font-extrabold text-[39px] md:text-[50px]'>OTHER PROGRAMS:</h1>
         </div>
 
-        <div className='mx-[280px] hover:scale-105 duration-500 text-white bg-[#2a70cc] my-[70px] text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 px-[40px] pt-[22px] pb-[30px] font-serif'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a70cc] text-[17.5px] my-[70px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px]  pb-[30px] font-serif'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[26px] sa:text-[30px] sy:text-[40px] mt-5 text-[#ff9633] font-semibold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
                 Executive Diploma Program
               </h1>
               <div className='pt-3 leading-[30px]'>
@@ -332,10 +340,10 @@ const Program = () => {
                   </li>
                 </ul>
 
-                <div className='pt-7'>
-                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span> One month</p>
+                <div className='pt-7 text-center'>
+                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> One month</p>
                   <p className='pt-4'>
-                    <span className='font-bold'>TUITION:</span> CHF 500 (Apply now for a scholarship and pay as little as #5,000)</p>
+                    <span className='font-bold'>TUITION:</span><br /> CHF 500 (Apply now for a scholarship and pay as little as #5,000)</p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
                   <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
@@ -350,10 +358,10 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='mx-[280px] hover:scale-105 duration-500 text-black bg-white my-[70px] text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 px-[40px] pt-[22px] pb-[30px] font-serif'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white text-[17.5px] my-[70px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px] font-serif'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[26px] sa:text-[30px] sy:text-[40px] mt-5 text-[#ff9633] font-semibold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
                 Professional Certificates
               </h1>
               <div className='pt-3 leading-[30px]'>
@@ -419,10 +427,11 @@ const Program = () => {
                   </li>
                 </ul>
 
-                <div className='pt-7'>
-                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span> 14 Days</p>
+                <div className='pt-7 text-center'>
+                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> 14 Days</p>
                   <p className='pt-4'>
-                    <span className='font-bold'>TUITION:</span> NGN 3,000</p>
+                    <span className='font-bold'>TUITION:</span><br /> NGN 3,000
+                  </p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
                   <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
@@ -437,10 +446,10 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='mx-[280px] hover:scale-105 duration-500 text-white bg-[#2a70cc] my-[70px] text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 px-[40px] pt-[22px] pb-[30px] font-serif'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a70cc] text-[17.5px] my-[70px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px] font-serif'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[26px] sa:text-[30px] sy:text-[40px] mt-5 text-[#ff9633] font-semibold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
                 Executive Mini - MBA Programs
               </h1>
               <div className='pt-3 leading-[30px]'>
@@ -500,10 +509,10 @@ const Program = () => {
                   </li>
                 </ul>
 
-                <div className='pt-7'>
-                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span> Two months</p>
+                <div className='pt-7 text-center'>
+                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> Two months</p>
                   <p className='pt-4'>
-                    <span className='font-bold'>TUITION:</span>NGN 40,000</p>
+                    <span className='font-bold'>TUITION:</span><br /> NGN 40,000</p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
                   <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
@@ -519,7 +528,7 @@ const Program = () => {
         </div>
 
         <div className='flex flex-col items-center'>
-          <h1 className='text-[30px] mt-9 font-bold text-red-600'>FOR MORE PROGRAMS</h1>
+          <h1 className='st:text-[30px] text-[24px] text-center mt-9 font-bold text-orange-400'>FOR MORE PROGRAMS</h1>
           <a target='_blank' rel='noreferrer' href="https://wa.link/01wlzw">
             <button className='p-4 md:block hidden items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
               Click Here
