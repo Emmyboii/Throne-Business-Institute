@@ -11,17 +11,17 @@ const Navbar = () => {
         setNav(!nav);
     }
 
-    const [fix, setFix] = useState(false)
+    const [fixx, setFixx] = useState(false)
 
-    function setFixed() {
+    function setFixedd() {
         if (window.scrollY > 0) {
-            setFix(true)
+            setFixx(true)
         } else {
-            setFix(false)
+            setFixx(false)
         }
     }
 
-    window.addEventListener("scroll", setFixed)
+    window.addEventListener("scroll", setFixedd)
 
 
     return (
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className={fix ? 'top-0 bg-blue-800 text-white fixed w-full z-50 xl:hidden st:flex py-3 md:pl-[50px] sm:pl-[40px] sd:px-[27px] px-[13.5px] md:pr-[70px] sm:pr-[40px] text-center items-center justify-between' : 'bg-blue-800 text-white fixed w-full z-50 xl:hidden st:flex py-3 md:pl-[50px] sm:pl-[40px] sd:px-[27px] px-[13.5px] md:pr-[70px] sm:pr-[40px] text-center items-center justify-between'}>
+            <div className={fixx ? 'top-0 bg-blue-800 text-white fixed w-full z-50 xl:hidden st:flex py-3 md:pl-[50px] sm:pl-[40px] sd:px-[27px] px-[13.5px] md:pr-[70px] sm:pr-[40px] text-center items-center justify-between' : 'bg-blue-800 text-white fixed w-full z-50 xl:hidden st:flex py-3 md:pl-[50px] sm:pl-[40px] sd:px-[27px] px-[13.5px] md:pr-[70px] sm:pr-[40px] text-center items-center justify-between'}>
                 <p className='md:text-[30px] sm:text-[25.5px] sd:text-[21px] st:text-[16.6px] sl:text-[22px] text-[18px] font-semibold'>READY TO GET STARTED?</p>
                 <a href="#apply">
                     <button className='bg-orange-400 sm:px-5 sd:px-3 px-[8.6px] st:mt-0 mt-2 py-3 rounded-lg'>APPLY NOW</button>
