@@ -1,8 +1,6 @@
 import { React, useState } from 'react'
 import Back from '../Images/Screenshot.png';
 import Back2 from '../Images/graduate.jpg';
-import ED2 from '../Images/girl1.jpg';
-import PC2 from '../Images/PC3.png';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 // import { ReactTyped } from 'react-typed';
@@ -18,36 +16,40 @@ const Program = () => {
 
   const handleProg1 = () => {
     setprog1(!prog1)
-    // if (prog1 === true) {
-    //   setprog2(prog2)
-    // }
+    setprog2(prog1)
+    setprog3(prog1)
+    setprog4(prog1)
+    setprog5(prog1)
   }
 
   const handleProg2 = () => {
+    setprog1(prog2)
     setprog2(!prog2)
-    // if (prog2 === true) {
-    //   setprog1(prog1)
-    // }
+    setprog3(prog2)
+    setprog4(prog2)
+    setprog5(prog2)
   }
   const handleProg3 = () => {
+    setprog1(prog3)
+    setprog2(prog3)
     setprog3(!prog3)
-    // if (prog2 === true) {
-    //   setprog1(prog1)
-    // }
+    setprog4(prog3)
+    setprog5(prog3)
   }
   const handleProg4 = () => {
+    setprog1(prog4)
+    setprog2(prog4)
+    setprog3(prog4)
     setprog4(!prog4)
-    // if (prog2 === true) {
-    //   setprog1(prog1)
-    // }
+    setprog5(prog4)
   }
   const handleProg5 = () => {
+    setprog1(prog5)
+    setprog2(prog5)
+    setprog3(prog5)
+    setprog4(prog5)
     setprog5(!prog5)
-    // if (prog2 === true) {
-    //   setprog1(prog1)
-    // }
   }
-
 
 
   return (
@@ -64,25 +66,15 @@ const Program = () => {
         <img className='w-[50%] hidden mo:block scale-y-[1.05] mo:scale-y-100 outline-none border-none' src={Back} alt="" />
       </div>
       <img className='w-full h-[40vh] mp:h-[60vh] object- mo:hidden block mo:scale-y-100 outline-none border-none' src={Back2} alt="" />
-      <div className='py-[60px] flex flex-col text-center justify-center bg-white'>
-        <h1 className='lg:text-[30px] md:text-[28px] sm:text-[25px] sv:text-[23px] text-[22px] lg:px-[150px] md:px-[90px] sm:px-[60px] se:px-[40px]'>
-          Our curriculum is developed by industry experts
-          and aligned with global standards.
-        </h1><br />
-        <div className='sm:grid sm:grid-cols-2 md:gap-[85px] sm:gap-[55px] px-[70px]'>
-          <img className='rounded-lg sm:hover:scale-105 sv:hover:scale-100 sm:scale-100 sv:scale-95 scale-100 h-[100%] hover:scale-105 duration-500 object-cover' src={ED2} alt="" />
-          <img className='rounded-lg hover:scale-105 duration-500 object-cover hidden sm:block' src={PC2} alt="" />
-        </div>
-      </div>
-      <div className='bg-blue-500 py-[60px]'>
+      <div className='bg-blue-600 py-[60px]'>
         <div>
           <h1 className='text-center text-white font-extrabold sa:text-[39px] st:text-[37.5px] text-[34.7px] md:text-[50px]'>OUR PROGRAMS:</h1>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a70cc] my-[90px] text-[17.5px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px] font-serif'>
-            <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
-              Associate Degree's (B.Sc - AD)
+        <div id='ABD' className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a50cc] my-[90px] text-[17.5px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px]'>
+            <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+              ASSOCIATE DEGRESS'S (B.Sc - AD)
             </h1>
             <p className='pt-3 leading-[30px]'>
               Our Associate Degree Bachelor's Program is designed to enable you understand what it takes to be ever prepared in a ever
@@ -158,26 +150,27 @@ const Program = () => {
                 College University.
               </p>
 
-              <div className='pt-7 text-center'>
-                <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> 2 year and 3 year programs</p>
+              <div className='pt-7'>
+                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>2 year and 3 year programs</p>
                 <p className='pt-4'>
-                  <span className='font-bold'>TUITION: </span><br />
-                  <span className='text-center'>CHF 2,660 (Apply now for scholarship and pay as little as 12,000/month or 60,000/6-months, or 120,000/year)</span>
+                  <span className='font-bold'>TUITION: </span>
+                  <strike className='font-bold text-orange-500'>CHF 2,660</strike> <span className='font-bold'>NGN 12,000/month</span>
                 </p>
               </div>
               <div className='text-center mt-8'>
                 <a href="#apply">
-                  <button className='bg-gradient-to-r from-orange-500 to-black/60 p-4 rounded-full'>APPLY NOW</button>
+                  <button className='bg-orange-500 p-4 rounded-full font-bold text-[20px] mb-3'>APPLY NOW</button>
                 </a>
+                <p>*Limited Slots Available</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white text-[17.5px] my-[102px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px] font-serif'>
-            <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
-              Executive MBA Program
+        <div id='MBA' className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white/90 text-[17.5px] my-[102px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
+            <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+              EXECUTIVE MBA PROGRAM
             </h1>
             <div className='pt-3 leading-[30px]'>
               The Master of Business Administration Program(MBA) are internationally-recognized programs designed to develop the skills
@@ -251,15 +244,18 @@ const Program = () => {
                 College University.
               </p>
 
-              <div className='pt-7 text-center'>
-                <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> 12 to 24 months</p>
+              <div className='pt-7'>
+                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>12 to 24 months</p>
                 <p className='pt-4'>
-                  <span className='font-bold'>TUITION:</span><br /> CHF 12,660 (Apply now for a scholarship and pay as little as 59,000/month)</p>
+                  <span className='font-bold'>TUITION: </span>
+                  <strike className='font-bold text-orange-500'>CHF 12,660</strike> <span className='font-bold'>NGN 59,000/month</span>
+                </p>
               </div>
               <div className='text-center mt-8'>
                 <a href="#apply">
-                  <button className='bg-gradient-to-r from-blue-500 to-black/60 p-4 rounded-full'>APPLY NOW</button>
+                  <button className='bg-orange-500 text-white p-4 rounded-full font-bold text-[20px] mb-3'>APPLY NOW</button>
                 </a>
+                <p>*Limited Slots Available</p>
               </div>
             </div>
           </div>
@@ -269,11 +265,11 @@ const Program = () => {
           <h1 className='text-center text-white font-extrabold text-[39px] md:text-[50px]'>OTHER PROGRAMS:</h1>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a70cc] text-[17.5px] my-[70px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px]  pb-[30px] font-serif'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a50cc] text-[17.5px] my-[70px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
-                Executive Diploma Program
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+                EXECUTIVE DIPLOMA PROGRAM
               </h1>
               <div className='pt-3 leading-[30px]'>
                 Our Executive Diploma programs will help you focus your learning on distinct topics, to provide you with specific expertise
@@ -340,17 +336,19 @@ const Program = () => {
                   </li>
                 </ul>
 
-                <div className='pt-7 text-center'>
-                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> One month</p>
+                <div className='pt-7'>
+                  <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>One month program</p>
                   <p className='pt-4'>
-                    <span className='font-bold'>TUITION:</span><br /> CHF 500 (Apply now for a scholarship and pay as little as #5,000)</p>
+                    <span className='font-bold'>TUITION: </span>
+                    <strike className='font-bold text-orange-500'>CHF 500</strike> <span className='font-bold'>NGN 5,000</span>
+                  </p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
                   <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
-                    <button className='bg-gradient-to-r from-orange-500 to-black/60 md:block hidden p-4 rounded-full'>GET STARTED</button>
+                    <button className='bg-orange-500 md:block font-bold hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
                   <a target='_blank' rel='noreferrer' href='https://wa.me/p/4391537294231364/2349012104873'>
-                    <button className='bg-gradient-to-r from-orange-500 to-black/60 block md:hidden p-4 rounded-full'>GET STARTED</button>
+                    <button className='bg-orange-500 font-bold block md:hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
                 </div>
               </div>
@@ -358,11 +356,11 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white text-[17.5px] my-[70px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px] font-serif'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white/90 text-[17.5px] my-[70px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
-                Professional Certificates
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+                PROFESSIONAL CERTIFICATES
               </h1>
               <div className='pt-3 leading-[30px]'>
                 Our Professional Courses are focused on the attributes of talented experts in various industies who shared their understanding
@@ -427,18 +425,18 @@ const Program = () => {
                   </li>
                 </ul>
 
-                <div className='pt-7 text-center'>
-                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> 14 Days</p>
+                <div className='pt-7'>
+                  <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION: </span> 14 Days</p>
                   <p className='pt-4'>
-                    <span className='font-bold'>TUITION:</span><br /> NGN 3,000
+                    <span className='font-bold'>TUITION: </span> NGN 3,000
                   </p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
                   <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
-                    <button className='bg-gradient-to-r from-blue-500 to-black/60 md:block hidden p-4 rounded-full'>GET STARTED</button>
+                    <button className='bg-orange-500 font-bold md:block hidden text-white p-4 rounded-full'>GET STARTED</button>
                   </a>
                   <a target='_blank' rel='noreferrer' href='https://wa.me/p/6349031568501910/2349012104873'>
-                    <button className='bg-gradient-to-r from-blue-500 to-black/60 block md:hidden p-4 rounded-full'>GET STARTED</button>
+                    <button className='bg-orange-500 font-bold block md:hidden text-white p-4 rounded-full'>GET STARTED</button>
                   </a>
                 </div>
               </div>
@@ -446,11 +444,11 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a70cc] text-[17.5px] my-[70px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px] font-serif'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a50cc] text-[17.5px] my-[70px] ma:text-[19px]'>
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-semibold'>
-                Executive Mini - MBA Programs
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+                EXECUTIVE MINI - MBA PROGRAM
               </h1>
               <div className='pt-3 leading-[30px]'>
                 Our Executive Mini MBA Program is focused on the fundamentals of business management. The program provides an introductory
@@ -509,17 +507,17 @@ const Program = () => {
                   </li>
                 </ul>
 
-                <div className='pt-7 text-center'>
-                  <p className='text-[18px]'><span className='font-bold'>PROGRAM DURATION:</span><br /> Two months</p>
+                <div className='pt-7'>
+                  <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION: </span> Two months</p>
                   <p className='pt-4'>
-                    <span className='font-bold'>TUITION:</span><br /> NGN 40,000</p>
+                    <span className='font-bold'>TUITION: </span> NGN 40,000</p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
                   <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
-                    <button className='bg-gradient-to-r from-orange-500 to-black/60 md:block hidden p-4 rounded-full'>GET STARTED</button>
+                    <button className='bg-orange-500 font-bold md:block hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
                   <a target='_blank' rel='noreferrer' href='https://wa.me/p/4057106524338825/2349012104873'>
-                    <button className='bg-gradient-to-r from-orange-500 to-black/60 block md:hidden p-4 rounded-full'>GET STARTED</button>
+                    <button className='bg-orange-500 font-bold block md:hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
                 </div>
               </div>

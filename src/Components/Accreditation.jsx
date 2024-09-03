@@ -11,11 +11,11 @@ const Accreditation = () => {
             <div className='bg-black flex text-center justify-center'>
                 <h1 className='py-10 sy:text-[55px] se:text-[47px] sv:text-[40px] st:text-[30px] text-[24px] font-bold font-serif text-white'>ACCREDITATIONS</h1>
             </div>
-            <div className='py-[60px] text-center'>
-                <div className='border-b-2 border-black/55'>
-                    <div className='lg:grid lg:grid-cols-2 flex flex-col items-center justify-center lg:ml-[55px] ml-5 mr-5 mb-[50px]'>
-                        <img className='border-black border-4 h-[100vh] sm:scale-100 se:scale-90 scale-75' src={SWL} alt="" />
-                        <div className='lg:mt-[200px] sv:mt-[30px]'>
+            <div className='py-[40px] text-center grid lg:grid-cols-3 sm:grid-cols-2'>
+                <div>
+                    <div className='flex flex-col items-center justify-center mx-5'>
+                        <img className='border-black border-4 h-[50vh]' src={SWL} alt="" />
+                        <div className='mt-[30px]'>
                             <h1 className='text-[30px] font-semibold text-orange-400 font-serif'>Switzerland</h1>
                             <p className='font-serif leading-8 lg:mx-0 md:mx-10'>
                                 The State Secretariat for Education, Research and Innovation SERI within the Federal Department of Economic
@@ -26,22 +26,22 @@ const Accreditation = () => {
                     </div>
                 </div>
 
-                <div className='border-b-2 border-black/55'>
-                    <div className='lg:grid lg:grid-cols-2 flex flex-col-reverse items-center justify-center lg:mx-[55px] mx-5 my-[50px]'>
-                        <div className='lg:mt-[200px] sv:mt-[30px]'>
+                <div>
+                    <div className='flex flex-col-reverse items-center justify-center mx-5 sm:mt-0 mt-11'>
+                        <div className='mt-[30px]'>
                             <h1 className='text-[30px] font-semibold text-orange-400 font-serif'>The Republic Of Chad</h1>
                             <p className='font-serif leading-8 lg:mx-0 md:mx-10'>
                                 The PIET sets out the Government of Chad's policy on education for the period 2018-2020. It covers all levels of education
                                 (from pre- school to higher education).
                             </p>
                         </div>
-                        <img className='border-black border-4 xl:ml-[55px] sm:scale-100 se:scale-90 scale-90 h-[100vh]' src={MEC} alt="" />
+                        <img className='border-black border-4 xl:ml-[55px] h-[50vh]' src={MEC} alt="" />
                     </div>
                 </div>
 
-                <div className='lg:grid lg:grid-cols-2 flex flex-col items-center justify-center lg:ml-[55px] ml-5 mr-5 mt-[50px]'>
-                    <img className='border-black border-4 h-[100vh] sm:scale-100 se:scale-90 scale-75' src={CAR} alt="" />
-                    <div className='lg:mt-[240px] sv:mt-[30px]'>
+                <div className='flex flex-col items-center justify-center mx-5 lg:mt-0 mt-11'>
+                    <img className='border-black border-4 h-[50vh]' src={CAR} alt="" />
+                    <div className='mt-[30px]'>
                         <h1 className='text-[30px] font-semibold text-orange-400 font-serif'>Central African Republic</h1>
                         <p className='font-serif leading-8 lg:mx-0 md:mx-10'>
                             The Ministry of Higher Education (Ministère de l'Enseignement Supérieur) is a government ministry responsible

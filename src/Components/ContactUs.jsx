@@ -20,7 +20,7 @@ const ContactUs = () => {
                             +243 903 260 5684
                         </a>
                     </div>
-                    <p className='text-[20px] se:text-[23px] sm:text-[25px] ms:text-[30px] font-bold text-center ms:text-start mt-4 se:mt-3'>Or Call us or send us a mail</p><br />
+                    <p className='text-[24px] se:text-[26px] sm:text-[26.6px] ms:text-[30px] font-bold text-center ms:text-start mt-4 se:mt-3'>Or Call us or send us a mail</p><br />
                     <div className='ms:block hidden'>
                         <div className='flex gap-3 items-center mt-3'>
                             <FaPhoneVolume className='text-[27px]' />

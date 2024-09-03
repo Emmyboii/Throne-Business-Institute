@@ -9,21 +9,25 @@ import Apply from "../Components/Apply";
 import Program from '../Components/Program';
 import Quote from '../Components/Quote';
 import Accreditation from '../Components/Accreditation';
+import Testimonial from '../Components/Testimonial';
+import PopUp from '../Components/PopUp';
 
 const Home = () => {
 
     return (
         <div className='w-full'>
-            <Navbar />
-            <Homeindex />
-            <AboutUs />
-            <Quote />
-            <Program />
-            <Benefit />
-            <ContactUs />
-            <Apply />
-            <Accreditation />
-            <Footer />
+            <Navbar />          {/* done */}
+            <PopUp />
+            <Homeindex />       {/* text */}
+            <AboutUs />         {/* text */}
+            <Quote />           {/* one more quote */}
+            <Program />         {/* Done */}
+            <Benefit />         {/* Done */}
+            <Testimonial />     {/* Done */}
+            <Apply />           {/* side text */}
+            <ContactUs />       {/* Done */}
+            <Accreditation />   {/* Done */}
+            <Footer />          {/* Done */}
         </div>
     )
 }

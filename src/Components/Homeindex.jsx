@@ -48,21 +48,21 @@ const Homeindex = () => {
         <div className='w-full h-[100%] bg-blue-600 outline-none border-none'>
             <div>
                 <Slider {...settings} >
-                    <img src={Background1} alt='' className='w-full max-h-dvh min-h-[60dvh] object-cover opacity-50' />
-                    <img src={Background2} alt='' className='w-full max-h-dvh min-h-[60dvh] object-cover opacity-50' />
-                    <img src={Background3} alt='' className='w-full max-h-dvh min-h-[60dvh] object-cover opacity-50' />
+                    <img src={Background1} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-50' />
+                    <img src={Background2} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover lg:object-fill opacity-50' />
+                    <img src={Background3} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-50' />
                 </Slider>
             </div>
             <div className='flex'>
-                <div data-aos="fade-down" data-aos-delay="200" className='aos-init absolute top-[24%] flex flex-col justify-center sp:top-[37%] mp:top-[47%] md:top-[37%] mr:top-[35%] ma:top-[50%] mj:top-[35%] mk:top-[50%] mv:top-[32%] mw:top-[45%] lg:top-[38%] 2la:top-[48%] xl:top-[44%] 2lq:top-[50%] left-[4%]'>
-                    <h1 className=' lg:text-[60px] md:text-[55px] leading-[56px] sv:text-[49px] text-[48px] se:text-[57px] sp:text-[47px] font-bold text-white'>
+                <div data-aos="fade-down" data-aos-delay="200" className='aos-init absolute top-[32%] flex flex-col justify-center sp:top-[37%] mp:top-[47%] md:top-[37%] mr:top-[35%] ma:top-[50%] mj:top-[35%] mk:top-[50%] mv:top-[32%] mw:top-[45%] lg:top-[38%] 2la:top-[48%] xl:top-[44%] 2lq:top-[50%] left-[4%]'>
+                    <h1 className=' lg:text-[60px] md:text-[55px] leading-[56px] sv:text-[49px] text-[48px] se:text-[57px] sp:text-[47px] mv:text-[60px] font-bold text-white'>
                         Accelerate <br className='sp:hidden block' /> Your Future.
                     </h1>
-                    <p className='pt-8 lg:text-[26px] sm:text-[23px] sv:text-[21px] text-[19px] xl:mr-[550px] 2la:mr-[450px] ms:mr-[400px] md:mr-[250px] sm:mr-[120px] sx:mr-[80px] font-semibold text-white'>
+                    <p className='pt-8 lg:text-[26px] mv:text-[26px] sm:text-[23px] sv:text-[21px] text-[19px] xl:mr-[550px] 2la:mr-[450px] 2ll:mr-[800px] ms:mr-[400px] md:mr-[250px] sm:mr-[120px] sx:mr-[80px] font-semibold text-white'>
                         Earn globally recognized degrees, diplomas and certificates with unbeatable scholarship.
                     </p>
                     <a href='#programs'>
-                        <button data-aos="fade-up" data-aos-delay="600" className='aos-init bg-blue-400 mt-5 active:scale-95 text-white py-3 px-6 rounded-lg outline-none active:bg-blue-300'>
+                        <button data-aos="fade-up" data-aos-delay="600" className='aos-init absolute bg-blue-400 mt-5 text-white py-3 px-6 rounded-lg outline-none active:bg-blue-300'>
                             Start your Journey
                         </button>
                     </a>
@@ -71,7 +71,7 @@ const Homeindex = () => {
                     <RiArrowUpWideLine size={40} className='' />
                 </button>
 
-                <div className='xl:block hidden absolute top-[23%] 2lq:top-[30%] left-[60%]'>
+                <div className='xl:block hidden absolute top-[23%] 2lq:top-[22%] left-[60%]'>
                     <form className="w-[80%] ms:w-[80%] mx-5 bg-white py-[30px] shadow-md shadow-black/50">
                         <p className='font-serif font-semibold text-orange-600 text-[23px] sx:text-[25.5px] px-1 sy:text-[30px] text-center leading-[40px] sx:leading-[50px]'>
                             APPLY NOW FOR A SCHOLARSHIP
@@ -94,18 +94,41 @@ const Homeindex = () => {
                         </div>
                         <div className="mx-5">
                             <select className='py-[10px] mt-2 mb-6 pl-[20px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none' name="educationLvl" required >
-                                <option className='text-[18px]' value="">Highest Education Level</option>
-                                <option className="my-8 text-[18px]" value="ssce">SSCE</option>
-                                <option className="my-8 text-[18px]" value="hnd">HND</option>
-                                <option className="my-8 text-[18px]" value="ond">OND</option>
+                                <option value="">Highest Education Level</option>
+                                <option className="text-[18px] font-semibold" value="ssce">Senior Secondary School Certificate Examination(SSCE)</option>
+                                <option className="text-[18px] font-semibold" value="ond">Ordinary National Diploma(OND)</option>
+                                <option className="text-[18px] font-semibold" value="hnd">Higher National Diploma(HND)</option>
+                                <option className="text-[18px] font-semibold" value="hnd">Bachelor of Sciences(BSc)</option>
+                                <option className="text-[18px] font-semibold" value="hnd">Postgraduate Diploma(PGD)</option>
+                                <option className="text-[18px] font-semibold" value="masters">Masters Degree</option>
                             </select>
                         </div>
                         <div className="mx-5">
                             <select className='py-[10px] mt-2 mb-6 pl-[20px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none' name="educationLvl" required >
-                                <option className='text-[18px]' value="">Available Programme(s)</option>
-                                <option className="my-8 text-[18px]" value="ssce">SSCE</option>
-                                <option className="my-8 text-[18px]" value="hnd">HND</option>
-                                <option className="my-8 text-[18px]" value="ond">OND</option>
+                                <option className="text-[18px]" value="">Available Programme(s)</option>
+                                <optgroup className="text-[22px]" label="Associate Degree's (B.Sc - AD)">
+                                    <option className="text-[18px] font-[500]" value="Social Media Management">Social Media Management</option>
+                                    <option className="text-[18px] font-[500]" value="Customer Service">Customer Service</option>
+                                    <option className="text-[18px] font-[500]" value="Human Resource Management">Human Resource Management</option>
+                                    <option className="text-[18px] font-[500]" value="Project Management">Project Management</option>
+                                    <option className="text-[18px] font-[500]" value="Risk Management">Risk Management</option>
+                                    <option className="text-[18px] font-[500]" value="Sales Management">Sales Management</option>
+                                    <option className="text-[18px] font-[500]" value="Information Management">Information Management</option>
+                                    <option className="text-[18px] font-[500]" value="Supply Chain Management">Supply Chain Management</option>
+                                    <option className="text-[18px] font-[500]" value="Marketing">Marketing</option>
+                                    <option className="text-[18px] font-[500]" value="Accounting">Accounting</option>
+                                </optgroup>
+                                <optgroup className="text-[22px]" label="Executive MBA Program">
+                                    <option className="text-[18px] font-[500]" value="Business Management">Business Management</option>
+                                    <option className="text-[18px] font-[500]" value="Marketing">Marketing</option>
+                                    <option className="text-[18px] font-[500]" value="Human Resources">Human Resources</option>
+                                    <option className="text-[18px] font-[500]" value="Risk Management">Risk Management</option>
+                                    <option className="text-[18px] font-[500]" value="Supply Chain Management">Supply Chain Management</option>
+                                    <option className="text-[18px] font-[500]" value="Project Management">Project Management</option>
+                                    <option className="text-[18px] font-[500]" value="Information Technology">Information Technology</option>
+                                    <option className="text-[18px] font-[500]" value="Sales Management">Sales Management</option>
+                                    <option className="text-[18px] font-[500]" value="Accounting">Accounting</option>
+                                </optgroup>
                             </select>
                         </div>
                         <div className="mx-5">

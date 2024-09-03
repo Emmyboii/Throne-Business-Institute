@@ -24,9 +24,9 @@ const AboutUs = () => {
     }, []);
 
     return (
-        <div id='about' className='w-full text-white bg-blue-600 pt-[10px] flex flex-col items-center justify-center'>
-            <h1 className='text-orange-400 lg:text-[65px] md:text-[48px] st:text-[41px] text-[35px] font-semibold'>
-                About Us
+        <div id='about' className='w-full text-white bg-[#13156b] pt-[10px] flex flex-col items-center justify-center'>
+            <h1 className='text-orange-500 lg:text-[65px] md:text-[48px] st:text-[41px] text-[35px] font-bold'>
+                ABOUT US
             </h1>
             <div className={prog ? 'flex flex-col-reverse' : 'md:grid md:grid-cols-2 flex flex-col-reverse'}>
                 <div className=''>
@@ -46,7 +46,7 @@ const AboutUs = () => {
                         accessible to all, providing the highest quality education, upholding the highest ethical standards,
                         and making a positive impact on society.
                     </p><br />
-                    <p onClick={handleProg} className={prog ? 'hidden' : 'md:pl-0 xl:pl-[30px] pb-3 mx-6 text-orange-500 st:text-[20px] flex gap-3 cursor-pointer duration-500'}>
+                    <p data-aos="fade-up" data-aos-delay="100" onClick={handleProg} className={prog ? 'hidden' : 'aos-init md:pl-0 xl:pl-[30px] pb-3 mx-6 text-orange-500 st:text-[20px] flex gap-3 cursor-pointer duration-500'}>
                         Learn More <FaArrowRightLong className='mt-[6px]' />
                     </p>
                     <div className={prog ? 'block' : 'hidden'}>
