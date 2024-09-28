@@ -72,7 +72,7 @@ const Newsletter = () => {
                         </select>
                     </div>
                     <div className="mx-5">
-                        <button type="submit" className='py-[15px] w-[100%] mt-1 rounded-xl font-semibold sw:text-[24px] bg-blue-500 text-white'>Register Now</button>
+                        <button type="submit" className='py-[15px] w-[100%] mt-1 rounded-xl font-semibold sw:text-[24px] bg-[#01022e] text-white'>Register Now</button>
                     </div>
                 </form>
             </div>

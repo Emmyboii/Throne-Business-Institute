@@ -24,7 +24,7 @@ const AboutUs = () => {
     }, []);
 
     return (
-        <div id='about' className='w-full text-white bg-[#13156b] pt-[10px] flex flex-col items-center justify-center'>
+        <div id='about' className='w-full text-white bg-[#01022e] pt-[10px] flex flex-col items-center justify-center'>
             <h1 className='text-orange-500 lg:text-[65px] md:text-[48px] st:text-[41px] text-[35px] font-bold'>
                 ABOUT US
             </h1>

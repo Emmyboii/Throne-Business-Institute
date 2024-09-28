@@ -66,14 +66,14 @@ const Program = () => {
         <img className='w-[50%] hidden mo:block scale-y-[1.05] mo:scale-y-100 outline-none border-none' src={Back} alt="" />
       </div>
       <img className='w-full h-[40vh] mp:h-[60vh] object- mo:hidden block mo:scale-y-100 outline-none border-none' src={Back2} alt="" />
-      <div className='bg-blue-500 py-[60px]'>
+      <div className='bg-blue-900 py-[60px]'>
         <div>
           <h1 className='text-center text-white font-extrabold sa:text-[39px] st:text-[37.5px] text-[34.7px] md:text-[50px]'>OUR PROGRAMS:</h1>
         </div>
 
-        <div id='ABD' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 my-[90px] text-[17.5px] ma:text-[19px]'>
+        <div id='ABD' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 my-[90px] text-[17.5px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px]'>
-            <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+            <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
               Ass. Bachelors Degree
             </h1>
             <p className='pt-3 leading-[30px]'>
@@ -154,7 +154,7 @@ const Program = () => {
                 <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>2 year and 3 year programs</p>
                 <p className='pt-4'>
                   <span className='font-bold'>TUITION: </span>
-                  <strike className='font-bold text-orange-500'>CHF 2,660</strike> <span className='font-bold'>NGN 12,000/month</span>
+                  <strike className='font-bold text-orange-400'>CHF 2,660</strike> <span className='font-bold'>NGN 12,000/month</span>
                 </p>
               </div>
               <div className='text-center mt-8'>
@@ -167,7 +167,7 @@ const Program = () => {
           </div>
         </div>
 
-        <div id='MBA' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[102px] ma:text-[19px]'>
+        <div id='MBA' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[102px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
               Executive MBA Program
@@ -248,7 +248,7 @@ const Program = () => {
                 <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>12 to 24 months</p>
                 <p className='pt-4'>
                   <span className='font-bold'>TUITION: </span>
-                  <strike className='font-bold text-orange-500'>CHF 12,660</strike> <span className='font-bold'>NGN 59,000/month</span>
+                  <strike className='font-bold text-orange-400'>CHF 12,660</strike> <span className='font-bold'>NGN 59,000/month</span>
                 </p>
               </div>
               <div className='text-center mt-8'>
@@ -265,10 +265,10 @@ const Program = () => {
           <h1 className='text-center text-white font-extrabold text-[39px] md:text-[50px]'>OTHER PROGRAMS:</h1>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[70px] ma:text-[19px]'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
                 Executive Diploma Program
               </h1>
               <div className='pt-3 leading-[30px]'>
@@ -356,10 +356,10 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[70px] ma:text-[19px]'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
                 Professional Certificates
               </h1>
               <div className='pt-3 leading-[30px]'>
@@ -444,10 +444,10 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[70px] ma:text-[19px]'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
                 Executive Mini MBA Program
               </h1>
               <div className='pt-3 leading-[30px]'>

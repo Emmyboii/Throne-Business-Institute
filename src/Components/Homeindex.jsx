@@ -138,7 +138,7 @@ const Homeindex = () => {
                 </div>
             </div>
 
-            <div className='bg-gradient-to-r from-blue-500 from-50% to-orange-400 lg:py-[57px] mr:py-[50px] md:py-[42px] sa:py-[35px] py-[14px] text-center justify-center flex'>
+            <div className='bg-gradient-to-r from-blue-600 from-50% to-orange-400 lg:py-[57px] mr:py-[50px] md:py-[42px] sa:py-[35px] py-[14px] text-center justify-center flex'>
                 <p className='lg:text-[25px] mr:text-[22px] md:text-[20px] sm:text-[17px] text-[15px] font-semibold sm:mx-[40px] md:mx-[55px] mx-[2px] sa:mx-[10px] text-white'>
                     Unlock your potential with our innovative online programs.
                     We offer a unique pathway to academic excellence. With our flexible online platform and world-class faculty,

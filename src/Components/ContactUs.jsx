@@ -8,11 +8,11 @@ const ContactUs = () => {
 
 
     return (
-        <div id='contact' className='bg-blue-500 w-full ms:flex flex flex-col-reverse ms:flex-row ms:pl-[30px] ms:pt-[70px] pb-10'>
+        <div id='contact' className='bg-[#01022e] w-full ms:flex flex flex-col-reverse ms:flex-row ms:pl-[30px] ms:pt-[70px] pb-10'>
             <div className='ms:ml-[70px]'>
-                <div className='flex flex-col text-orange-400'>
-                    <h1 className='font-bold text-[28px] se:text-[35px] sm:text-[40px] ms:text-[35px] ms:mt-0 text-center ms:text-start se:mt-8 text-orange-400 pb-1'>Contact Us</h1>
-                    <h1 className='text-[20px] se:text-[23px] sm:text-[25px] ms:text-[20px] ms:mr-[50px] pt-5 mx-3 text-center ms:text-start flex justify-center ms:justify-normal'>Wish to Inquire about admission, syllabus or anything else?</h1>
+                <div className='flex flex-col text-orange-500'>
+                    <h1 className='font-bold text-[28px] se:text-[35px] sm:text-[40px] ms:text-[35px] ms:mt-0 text-center ms:text-start se:mt-8 text-orange-500 pb-1'>Contact Us</h1>
+                    <h1 className='text-[20px] se:text-[23px] sm:text-[25px] ms:text-[20px] ms:mr-[50px] pt-5 text-center ms:text-start flex justify-center ms:justify-normal'>Wish to Inquire about admission, syllabus or anything else?</h1>
                     <p className='text-[20px] se:text-[23px] sm:text-[25px] ms:text-[28px] mt-4 se:mt-5 text-center ms:text-start font-bold'>CHAT WITH AN ADVISOR</p>
                     <div className='flex flex-col se:flex-row gap-3 my-5 ms:text-start items-center justify-center ms:justify-start'>
                         <img className='w-[6%] se:w-[4%]' src={whatsapp} alt="" />

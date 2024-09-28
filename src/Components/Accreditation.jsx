@@ -2,7 +2,7 @@ import React from 'react'
 import SWL from '../Images/SWL.jpg';
 import MEC from '../Images/MEC.jpg';
 import CAR from '../Images/CAR.jpg';
-import NGR from '../Images/nigeria.png';
+// import NGR from '../Images/nigeria.png';
 
 
 const Accreditation = () => {
