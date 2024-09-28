@@ -34,17 +34,15 @@ const AboutUs = () => {
                         What We Represent
                     </p>
                     <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] mx-6 md:mx-0 mt-4 font-medium leading-6 st:leading-7'>
-                        Throne Management and Business Institute Switzerland (TMBI) is a pioneering educational
-                        institution dedicated to empowering individuals with the knowledge and skills necessary to
-                        succeed in the dynamic global landscape. Founded in 2018, TMBI is the first WhatsApp-based
-                        peer-to-peer educational institute in Nigeria, offering a unique and accessible approach to
-                        learning.
+                        Throne Management and Business Institute Switzerland is the first legalized WhatsApp & P2P Triple Accredited Ed-Tech
+                        Organization in the world providing an academically rigorous education to students who will walk out of school ready for
+                        lives of leadership and service to their community. From management to technology and social programs, each program is
+                        filled with activity that is both enriching and fun.
                     </p>
                     <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] mx-6 md:mx-0 se:pt-8 pt-4 font-medium leading-6 st:leading-7'>
-                        Our values include innovation, accessibility, excellence, integrity, and impact. We believe in
-                        embracing innovation to deliver engaging and effective learning experiences, making education
-                        accessible to all, providing the highest quality education, upholding the highest ethical standards,
-                        and making a positive impact on society.
+                        We strive to be committed to the students we are privileged to serve, in our alumni association, our dedicated, talented
+                        faculty and staff. We also take pride in having the most active and helpful group of partners, visionary parents,
+                        well-wishers, alumni and friends.
                     </p><br />
                     <p data-aos="fade-up" data-aos-delay="100" onClick={handleProg} className={prog ? 'hidden' : 'aos-init md:pl-0 xl:pl-[30px] pb-3 mx-6 text-orange-500 st:text-[20px] flex gap-3 cursor-pointer duration-500'}>
                         Learn More <FaArrowRightLong className='mt-[6px]' />

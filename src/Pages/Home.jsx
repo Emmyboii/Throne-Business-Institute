@@ -19,7 +19,7 @@ const Home = () => {
             <Navbar />          {/* done */}
             <PopUp />
             <Homeindex />       {/* text */}
-            <AboutUs />         {/* text */}
+            <AboutUs />         {/* done */}
             <Quote />           {/* one more quote */}
             <Program />         {/* Done */}
             <Benefit />         {/* Done */}

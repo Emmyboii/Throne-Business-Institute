@@ -52,15 +52,9 @@ const Footer = () => {
                     <div className='flex flex-col'>
                         <h1 className='font-bold text-[28px] mr:mt-0 mt-8 text-center mr:text-start'>Contact Us</h1>
                         <div className='mr:flex mr:flex-col mr:gap-3 mt-4'>
-                            <p className='font-semibold mr:text-start text-center text-[21px] mb-2'>Switzerland Address</p>
+                            <p className='font-semibold mr:text-start text-center text-[21px] mb-2'>Swiss Address</p>
                             <div className='mr:flex mr:gap-3 text-center '>
                                 <FaMapMarkerAlt className='mt-2 mr:block hidden' /><p className='text-[17px]'>Via Vigizzi 98, Unterlangenegg 3614, Switzerland</p>
-                            </div>
-                        </div>
-                        <div className='mr:flex mr:flex-col mr:gap-3 pt-5'>
-                            <p className='font-semibold mr:text-start text-center text-[21px] mb-2'>Nigeria Address</p>
-                            <div className='mr:flex mr:gap-3 text-center '>
-                                <FaMapMarkerAlt className='mt-2 mr:block hidden' /><p className='text-[17px]'>The Lennox Place, 3 Admiralty Way, Lekki Phase 1, Lagos.</p>
                             </div>
                         </div>
                         <div className='mr:flex mr:gap-3 text-center items-center pt-8'>

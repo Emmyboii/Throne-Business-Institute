@@ -55,7 +55,7 @@ const Program = () => {
   return (
     <div id='programs' className='w-full h-[100%]'>
       <div className='flex mo:flex-row flex-col text-white justify-center items-center text-center bg-[#01022e]'>
-        <div className='z-10 mo:pl-7 mo:pr-0 mo:py-0 ma:pl-9 ma:pr-9 py-[70px]'>
+        <div className='z-10 mo:pl-[55px] mo:pr-0 mo:py-0 ma:pl-9 ma:pr-9 py-[70px]'>
           <h1 className='lg:text-[40px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-orange-500'>
             Choose Your Path to Success
           </h1>
@@ -66,15 +66,15 @@ const Program = () => {
         <img className='w-[50%] hidden mo:block scale-y-[1.05] mo:scale-y-100 outline-none border-none' src={Back} alt="" />
       </div>
       <img className='w-full h-[40vh] mp:h-[60vh] object- mo:hidden block mo:scale-y-100 outline-none border-none' src={Back2} alt="" />
-      <div className='bg-blue-600 py-[60px]'>
+      <div className='bg-blue-500 py-[60px]'>
         <div>
           <h1 className='text-center text-white font-extrabold sa:text-[39px] st:text-[37.5px] text-[34.7px] md:text-[50px]'>OUR PROGRAMS:</h1>
         </div>
 
-        <div id='ABD' className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a50cc] my-[90px] text-[17.5px] ma:text-[19px]'>
+        <div id='ABD' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 my-[90px] text-[17.5px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px]'>
             <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
-              ASSOCIATE DEGRESS'S (B.Sc - AD)
+              Ass. Bachelors Degree
             </h1>
             <p className='pt-3 leading-[30px]'>
               Our Associate Degree Bachelor's Program is designed to enable you understand what it takes to be ever prepared in a ever
@@ -167,10 +167,10 @@ const Program = () => {
           </div>
         </div>
 
-        <div id='MBA' className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white/90 text-[17.5px] my-[102px] ma:text-[19px]'>
+        <div id='MBA' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[102px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
-              EXECUTIVE MBA PROGRAM
+              Executive MBA Program
             </h1>
             <div className='pt-3 leading-[30px]'>
               The Master of Business Administration Program(MBA) are internationally-recognized programs designed to develop the skills
@@ -265,11 +265,11 @@ const Program = () => {
           <h1 className='text-center text-white font-extrabold text-[39px] md:text-[50px]'>OTHER PROGRAMS:</h1>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a50cc] text-[17.5px] my-[70px] ma:text-[19px]'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[70px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
               <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
-                EXECUTIVE DIPLOMA PROGRAM
+                Executive Diploma Program
               </h1>
               <div className='pt-3 leading-[30px]'>
                 Our Executive Diploma programs will help you focus your learning on distinct topics, to provide you with specific expertise
@@ -356,11 +356,11 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-black bg-white/90 text-[17.5px] my-[70px] ma:text-[19px]'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[70px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
               <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
-                PROFESSIONAL CERTIFICATES
+                Professional Certificates
               </h1>
               <div className='pt-3 leading-[30px]'>
                 Our Professional Courses are focused on the attributes of talented experts in various industies who shared their understanding
@@ -444,11 +444,11 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-[#2a50cc] text-[17.5px] my-[70px] ma:text-[19px]'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-500 text-[17.5px] my-[70px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
             <div>
               <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
-                EXECUTIVE MINI - MBA PROGRAM
+                Executive Mini MBA Program
               </h1>
               <div className='pt-3 leading-[30px]'>
                 Our Executive Mini MBA Program is focused on the fundamentals of business management. The program provides an introductory
@@ -526,15 +526,14 @@ const Program = () => {
         </div>
 
         <div className='flex flex-col items-center'>
-          <h1 className='st:text-[30px] text-[24px] text-center mt-9 font-bold text-orange-400'>FOR MORE PROGRAMS</h1>
           <a target='_blank' rel='noreferrer' href="https://wa.link/01wlzw">
-            <button className='p-4 md:block hidden items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
-              Click Here
+            <button className='p-4 md:block hidden text-[18px] items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
+              VIEW MORE
             </button>
           </a>
           <a target='_blank' rel='noreferrer' href="https://wa.me/c/2349012104873">
-            <button className='p-4 md:hidden block items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
-              Click Here
+            <button className='p-4 md:hidden text-[18px] block items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
+              VIEW MORE
             </button>
           </a>
         </div>

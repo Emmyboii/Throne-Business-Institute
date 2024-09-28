@@ -1,5 +1,6 @@
 import React from 'react';
 import Quotes from '../Images/Quote.jpg';
+import Quotes2 from '../Images/Quote2.jpg';
 import { FaQuoteLeft } from "react-icons/fa";
 
 const Quote = () => {
@@ -8,7 +9,20 @@ const Quote = () => {
     return (
         <div className='bg-gray-300'>
             <div className='py-[30px] mv:pl-[50px] mv:pr-[30px] mv:flex mv:flex-row flex flex-col items-center'>
-                <img className='scale-95' src={Quotes} alt="" />
+                <img className='mv:w-[25%] mv:h-[60vh] w-[80%] pb-[12px]' src={Quotes2} alt="" />
+                <div>
+                    <p className='mx-[20px] mv:ml-[50px] lg:mt-[7.5%] ss:text-[25px] font-serif sd:text-[23px] text-[20px] font-semibold'>
+                        <FaQuoteLeft className='text-blue-500' />
+                        We aim at inspiring our students to dream more, learn more, do more, and become more in their respective journeys
+                        of life.
+                    </p>
+                    <p className='pt-7 mx-[20px] ss:text-[25px] sd:text-[23px] text-[20px] mv:ml-[50px] font-normal'>
+                        Ally Pascal Angel — Executive Chancellor
+                    </p>
+                </div>
+            </div>
+            <hr className='h-1 bg-black/70'/>
+            <div className='py-[30px] mv:pl-[50px] mv:pr-[30px] mv:flex mv:flex-row flex flex-col-reverse items-center'>
                 <div>
                     <p className='mx-[20px] mv:ml-[50px] lg:mt-[7.5%] ss:text-[25px] font-serif sd:text-[23px] text-[20px] font-semibold'>
                         <FaQuoteLeft className='text-blue-500' />
@@ -20,6 +34,7 @@ const Quote = () => {
                         Vonashuchuk Doe — Team Lead Executive TMBI Switzerland
                     </p>
                 </div>
+                <img className='scale-95' src={Quotes} alt="" />
             </div>
         </div >
     )

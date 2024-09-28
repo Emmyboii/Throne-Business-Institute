@@ -45,12 +45,12 @@ const Homeindex = () => {
 
 
     return (
-        <div className='w-full h-[100%] bg-blue-600 outline-none border-none'>
+        <div className='w-full h-[100%] bg-blue-700 outline-none border-none'>
             <div>
                 <Slider {...settings} >
-                    <img src={Background1} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-50' />
-                    <img src={Background2} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover lg:object-fill opacity-50' />
-                    <img src={Background3} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-50' />
+                    <img src={Background1} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-60' />
+                    <img src={Background2} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover lg:object-fill opacity-60' />
+                    <img src={Background3} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-60' />
                 </Slider>
             </div>
             <div className='flex'>
@@ -62,7 +62,7 @@ const Homeindex = () => {
                         Earn globally recognized degrees, diplomas and certificates with unbeatable scholarship.
                     </p>
                     <a href='#programs'>
-                        <button data-aos="fade-up" data-aos-delay="600" className='aos-init absolute bg-blue-400 mt-5 text-white py-3 px-6 rounded-lg outline-none active:bg-blue-300'>
+                        <button data-aos="fade-up" data-aos-delay="600" className='aos-init absolute bg-blue-500 mt-5 text-white py-3 px-6 rounded-lg outline-none active:bg-blue-300'>
                             Start your Journey
                         </button>
                     </a>
@@ -71,29 +71,29 @@ const Homeindex = () => {
                     <RiArrowUpWideLine size={40} className='' />
                 </button>
 
-                <div className='xl:block hidden absolute top-[23%] 2lq:top-[22%] left-[60%]'>
+                <div className='xl:block hidden absolute top-[23%] 2lq:top-[23%] left-[60%]'>
                     <form className="w-[80%] ms:w-[80%] mx-5 bg-white py-[30px] shadow-md shadow-black/50">
                         <p className='font-serif font-semibold text-orange-600 text-[23px] sx:text-[25.5px] px-1 sy:text-[30px] text-center leading-[40px] sx:leading-[50px]'>
                             APPLY NOW FOR A SCHOLARSHIP
                         </p><br />
                         <div className="ms:flex">
                             <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 w-full mb-6 pl-[20px] rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none placeholder:text-[17px]' type="text" name="firstName" required placeholder='First Name' />
+                                <input className='py-[10px] mt-2 w-full mb-6 pl-[15px] rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="text" name="firstName" required placeholder='First Name' />
                             </div>
                             <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 mb-6 pl-[20px] w-full rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none placeholder:text-[17px]' type="text" name="lastName" required placeholder='Last Name' />
+                                <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="text" name="lastName" required placeholder='Last Name' />
                             </div>
                         </div>
                         <div className="ms:flex">
                             <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 mb-6 pl-[20px] w-full rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none placeholder:text-[17px]' type="tel" name="phoneNo" required placeholder='WhatsApp number' />
+                                <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="tel" name="phoneNo" required placeholder='WhatsApp number' />
                             </div>
                             <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 mb-6 pl-[20px] w-full rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none placeholder:text-[17px]' type="email" name="emailAdd" required placeholder='E-mail' />
+                                <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="email" name="emailAdd" required placeholder='E-mail' />
                             </div>
                         </div>
                         <div className="mx-5">
-                            <select className='py-[10px] mt-2 mb-6 pl-[20px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none' name="educationLvl" required >
+                            <select className='py-[10px] mt-2 mb-6 pl-[15px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none' name="educationLvl" required >
                                 <option value="">Highest Education Level</option>
                                 <option className="text-[18px] font-semibold" value="ssce">Senior Secondary School Certificate Examination(SSCE)</option>
                                 <option className="text-[18px] font-semibold" value="ond">Ordinary National Diploma(OND)</option>
@@ -104,7 +104,7 @@ const Homeindex = () => {
                             </select>
                         </div>
                         <div className="mx-5">
-                            <select className='py-[10px] mt-2 mb-6 pl-[20px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-2 focus:border-orange-400 focus:shadow focus:shadow-orange-400 outline-none' name="educationLvl" required >
+                            <select className='py-[10px] mt-2 mb-6 pl-[15px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none' name="educationLvl" required >
                                 <option className="text-[18px]" value="">Available Programme(s)</option>
                                 <optgroup className="text-[22px]" label="Associate Degree's (B.Sc - AD)">
                                     <option className="text-[18px] font-[500]" value="Social Media Management">Social Media Management</option>
@@ -131,8 +131,8 @@ const Homeindex = () => {
                                 </optgroup>
                             </select>
                         </div>
-                        <div className="mx-5">
-                            <button type="submit" className='py-[10px] w-[100%] sw:mt-0 rounded-xl font-semibold sw:text-[24px] bg-black text-white'>Register</button>
+                        <div className="mx-5 mt-2">
+                            <button type="submit" className='py-[10px] w-[100%] sw:mt-0 rounded-xl font-semibold sw:text-[24px] bg-blue-500 text-white'>Register</button>
                         </div>
                     </form>
                 </div>

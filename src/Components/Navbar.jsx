@@ -54,7 +54,7 @@ const Navbar = () => {
                 </ul>
                 <div className='md:flex md:items-center hidden'>
                     <a href='#contact'>
-                        <button className='bg-blue-400  text-white active:scale-95 mt-2  py-3 px-6 rounded-lg outline-none active:bg-blue-800'>
+                        <button className='bg-blue-400 text-white active:scale-95 mt-2 xl:text-[19px] lg:text-[16px] py-3 px-6 rounded-lg outline-none active:bg-blue-800'>
                             Contact Us
                         </button>
                     </a>
@@ -101,7 +101,7 @@ const Navbar = () => {
                             </li>
                         </a>
                         <a href='#contact' onClick={handleNav}>
-                            <button className='bg-blue-400 text-white active:scale-95 mt-2 w-full py-3 px-6 rounded-lg outline-none active:bg-blue-500'>
+                            <button className='bg-blue-600 text-white active:scale-95 mt-2 w-full py-3 px-6 rounded-lg outline-none active:bg-blue-500'>
                                 Contact Us
                             </button>
                         </a>
