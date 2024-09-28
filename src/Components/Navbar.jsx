@@ -71,7 +71,7 @@ const Navbar = () => {
                 </a>
             </div>
 
-            {nav ? <div onClick={handleNav} className='bg-black/80 lg:hidden w-full fixed h-screen z-10 top-0 left-0'></div> : ''}
+            {nav ? <div onClick={handleNav} className='bg-black/80 lg:hidden w-full fixed h-screen z-50 top-0 left-0'></div> : ''}
 
             <div className={nav ? 'fixed top-0 right-0 w-[50%] lg:hidden h-screen bg-zinc-900 text-white z-50 duration-500' : 'fixed top-0 right-[-100%] w-[50%] lg:hidden h-screen z-50 duration-500'}>
                 <div className='flex items-center ml-4 mt-8'>
