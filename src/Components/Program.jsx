@@ -74,7 +74,7 @@ const Program = () => {
         <div id='ABD' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 my-[90px] text-[17.5px] ma:text-[19px]'>
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px]'>
             <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
-              Ass. Bachelors Degree
+              Ass. BSc. Degree
             </h1>
             <p className='pt-3 leading-[30px]'>
               Our Associate Degree Bachelor's Program is designed to enable you understand what it takes to be ever prepared in a ever
@@ -86,7 +86,7 @@ const Program = () => {
             </p>
 
             <div className={prog1 ? 'block pt-4' : 'pt-4 hidden'}>
-              <ul className='text-center sv:font-semibold font-[550]'>
+              <ul className='text-center sv:font-bold font-[550] text-orange-500'>
                 <li className='pt-2'>High-quality education at a fraction of the cost.</li>
                 <li className='pt-2'>Learn at your own pace, from anywhere in the world.</li>
                 <li className='pt-2'>Earn a degree valued worldwide.</li>
@@ -96,8 +96,8 @@ const Program = () => {
 
               <p className='pt-8 leading-[30px]'>
                 According to Nuffic- the Dutch Organisation for Internationalisation in Education, an European
-                Associate Bachelor's degree is comparable to a Nigerian HND program and even better
-                because it qualifies the student to a direct master's degree afterwards. Our students are
+                Associate BSc. degree is comparable to a Nigerian HND program and even better
+                because it qualifies the student to a direct Master's degree afterwards. Our students are
                 introduced to the most robust and up-to-date instruction in business and management
                 disciplines. <br />
                 At Throne Management & Business Institute, Switzerland we take great pride in offering our
@@ -106,7 +106,7 @@ const Program = () => {
               </p>
 
               <ul className='pt-6'>
-                <li className='text-center font-semibold text-[21px]'>Available Programs are:</li>
+                <li className='text-center font-semibold text-[21px]'>Our available courses are:</li>
                 <li className='flex items-center gap-2 pt-4'><MdOutlineKeyboardDoubleArrowRight className='text-orange-400 text-[30px]' />
                   Social Media Management
                 </li>
@@ -151,7 +151,7 @@ const Program = () => {
               </p>
 
               <div className='pt-7'>
-                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>2 year and 3 year programs</p>
+                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>2 year program</p>
                 <p className='pt-4'>
                   <span className='font-bold'>TUITION: </span>
                   <strike className='font-bold text-orange-400'>CHF 2,660</strike> <span className='font-bold'>NGN 12,000/month</span>
@@ -181,12 +181,12 @@ const Program = () => {
               </span>
               <span className={prog2 ? 'block' : 'hidden'}>
                 Our rigorous programs equip you with the knowledge, skills, and networks needed to succeed in today's competitive business
-                environment. Upon enrolling in our 2-Year MBA program, you'll benefit from a structured curriculum designed to equip you
+                environment. Upon enrolling in our 1-Year MBA program, you'll benefit from a structured curriculum designed to equip you
                 with the skills and knowledge needed to excel in today's competitive business world.
               </span>
             </div>
             <div className={prog2 ? 'block pt-7 leading-[33px]' : 'pt-5 hidden'}>
-              <h1 className='text-center font-bold'>IT’S TIME TO REACH FOR GREATER</h1>
+              <h1 className='text-center font-bold text-orange-500'>IT’S TIME TO REACH FOR GREATER</h1>
               <ul>
                 <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Gain access to higher-paying positions and leadership roles.</li>
                 <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Increase your earning power through advanced business knowledge and skills.</li>
@@ -198,7 +198,7 @@ const Program = () => {
               </ul>
 
               <p className='pt-7 font-bold text-[16px]'>
-                Our 2-Year MBA program offers a rigorous yet flexible learning experience that will help
+                Our 1-Year MBA program offers a rigorous yet flexible learning experience that will help
                 you achieve your career aspirations.
               </p>
               <p className='pt-5 text-[16px] font-bold'>OUR MBA CONCENTRATIONS INCLUDE:</p>
@@ -245,7 +245,7 @@ const Program = () => {
               </p>
 
               <div className='pt-7'>
-                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>12 to 24 months</p>
+                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>12 months</p>
                 <p className='pt-4'>
                   <span className='font-bold'>TUITION: </span>
                   <strike className='font-bold text-orange-400'>CHF 12,660</strike> <span className='font-bold'>NGN 59,000/month</span>

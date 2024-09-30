@@ -66,7 +66,7 @@ const Footer = () => {
                         <div className='mr:flex mr:gap-3 text-center items-center pt-8'>
                             <FaPhoneVolume className='mr:block hidden' />
                             <a className='text-[18px]' href='tel: +2439012104873' rel='noreferrer' target='_blank'>
-                                +243-901-210-4873
+                                +234-901-210-4873
                             </a>
                         </div>
                     </div>

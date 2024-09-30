@@ -2,13 +2,13 @@ import React from 'react'
 import SWL from '../Images/SWL.jpg';
 import MEC from '../Images/MEC.jpg';
 import CAR from '../Images/CAR.jpg';
-// import NGR from '../Images/nigeria.png';
+import COA from '../Images/COA.jpg';
 
 
 const Accreditation = () => {
 
     return (
-        <div id='accreditation' className='bg-pink-50 pb-5'>
+        <div id='accreditation' className='bg-gray-300 pb-5'>
             <div className='bg-black flex text-center justify-center'>
                 <h1 className='py-10 sy:text-[55px] se:text-[47px] sv:text-[40px] st:text-[30px] text-[24px] font-bold font-serif text-white'>ACCREDITATIONS</h1>
             </div>
@@ -52,14 +52,15 @@ const Accreditation = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className='grid grid-cols-2 items-center px-10 justify-center'>
-                <p className='text-[22px]'>
+            <div className='mr:grid mr:grid-cols-3 items-center px-10 justify-center'>
+                <div className='mr:col-span-1 mr:block mr:justify-start flex items-cente justify-center'>
+                    <img src={COA} alt="" className='w-[40%]' />
+                </div>
+                <p className='mr:text-[22px] sy:text-[20px] mr:col-span-2 text-center'>
                     All our programs are recognized by the Federal Government of Nigeria with students guaranteed of NYSC certificate afterwards.
                 </p>
-                <div className='ml-[320px]'>
-                    <img src={NGR} alt="" className='w-[50%]' />
-                </div>
-            </div> */}
+
+            </div>
         </div>
     )
 }

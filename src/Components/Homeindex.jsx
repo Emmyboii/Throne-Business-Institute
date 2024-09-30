@@ -1,10 +1,12 @@
 import { React, useEffect, useState } from 'react'
+// import { ReactTyped } from 'react-typed';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Background1 from "../Images/background2.jpg";
 import { RiArrowUpWideLine } from "react-icons/ri";
-import Background2 from "../Images/BG1.jpg";
+import Background2 from "../Images/programBG.jpg";
 import Background3 from "../Images/BG2.jpg";
+import { BsWhatsapp  } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,7 +25,6 @@ const Homeindex = () => {
     }
 
     window.addEventListener("scroll", setFixed)
-
 
     useEffect(() => {
         AOS.init({
@@ -48,9 +49,9 @@ const Homeindex = () => {
         <div className='w-full h-[100%] bg-blue-700 outline-none border-none'>
             <div>
                 <Slider {...settings} >
-                    <img src={Background1} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-60' />
-                    <img src={Background2} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover lg:object-fill opacity-60' />
-                    <img src={Background3} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-60' />
+                    <img src={Background1} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-40' />
+                    <img src={Background2} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover lg:object-fill opacity-40' />
+                    <img src={Background3} alt='' className='w-full max-h-dvh min-h-[70dvh] object-cover opacity-40' />
                 </Slider>
             </div>
             <div className='flex'>
@@ -67,72 +68,94 @@ const Homeindex = () => {
                         </button>
                     </a>
                 </div>
-                <button onClick={() => window.scrollTo(0, 0)} title='Scroll To Top' data-aos="slide-right" data-aos-delay="100" className={fix ? 'bg-gray-500  p-1 fixed rounded-full hover:bg-gray-600 text-white top-[84%] left-[-2%] z-40 mx-11' : 'hidden'}>
+                <button onClick={() => window.scrollTo(0, 0)} title='Scroll To Top' data-aos="slide-right" data-aos-delay="100" className={fix ? 'aos-init bg-gray-500  p-1 fixed rounded-full hover:bg-gray-600 text-white top-[90%] left-[-2%] z-40 mx-11' : 'hidden'}>
                     <RiArrowUpWideLine size={40} className='' />
                 </button>
 
+                <div className='bg-green-600 fixed text-white text-center top-[88%] right-[1%] px-3 py-2 rounded-full z-40'>
+                    <p className='font-bold text-[14px] pb-2'>CHAT WITH AN ADVISOR</p>
+                    <a href="https://wa.link/dgb7ft" rel='noreferrer' target='_blank' className='hover:scale-95 text-[20px] bg-green-40 flex items-center justify-center font-semibold duration-500'>
+                        <BsWhatsapp  className='text-[30px] text-white'/>
+                    </a>
+                </div>
+
                 <div className='xl:block hidden absolute top-[23%] 2lq:top-[23%] left-[60%]'>
-                    <form className="w-[80%] ms:w-[80%] mx-5 bg-white py-[30px] shadow-md shadow-black/50">
-                        <p className='font-serif font-semibold text-orange-600 text-[23px] sx:text-[25.5px] px-1 sy:text-[30px] text-center leading-[40px] sx:leading-[50px]'>
+                    <form className="w-[80%] ms:w-[80%] mx-5 bg-white py-[30px] flex flex-col shadow-md shadow-black/50">
+                        <p className='font-serif font-semibold text-orange-600 relative text-[23px] pb-1 sx:text-[25.5px] px-1 sy:text-[30px] text-center leading-[40px] sx:leading-[50px]'>
+                            {/* <ReactTyped
+                                strings={
+                                    [
+                                        "APPLY NOW FOR A SCHOLARSHIP",
+                                        "With Scholarship"
+                                    ]
+                                }
+                                typeSpeed={100}
+                                backSpeed={60}
+                                startDelay={400}
+                                backDelay={200}
+                                loop
+                            /> */}
                             APPLY NOW FOR A SCHOLARSHIP
-                        </p><br />
-                        <div className="ms:flex">
-                            <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 w-full mb-6 pl-[15px] rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="text" name="firstName" required placeholder='First Name' />
+                        </p>
+                        <div className='relative'>
+                            <div className="ms:flex">
+                                <div className="mx-5 ms:w-full">
+                                    <input className='py-[10px] mt-2 w-full mb-6 pl-[15px] rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="text" name="firstName" required placeholder='First Name' />
+                                </div>
+                                <div className="mx-5 ms:w-full">
+                                    <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="text" name="lastName" required placeholder='Last Name' />
+                                </div>
                             </div>
-                            <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="text" name="lastName" required placeholder='Last Name' />
+                            <div className="ms:flex">
+                                <div className="mx-5 ms:w-full">
+                                    <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="tel" name="phoneNo" required placeholder='WhatsApp number' />
+                                </div>
+                                <div className="mx-5 ms:w-full">
+                                    <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="email" name="emailAdd" required placeholder='E-mail' />
+                                </div>
                             </div>
-                        </div>
-                        <div className="ms:flex">
-                            <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="tel" name="phoneNo" required placeholder='WhatsApp number' />
+                            <div className="mx-5">
+                                <select className='py-[10px] mt-2 mb-6 pl-[15px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none' name="educationLvl" required >
+                                    <option value="">Highest Education Level</option>
+                                    <option className="text-[18px] font-semibold" value="ssce">Senior Secondary School Certificate Examination(SSCE)</option>
+                                    <option className="text-[18px] font-semibold" value="ond">Ordinary National Diploma(OND)</option>
+                                    <option className="text-[18px] font-semibold" value="hnd">Higher National Diploma(HND)</option>
+                                    <option className="text-[18px] font-semibold" value="hnd">Bachelor of Sciences(BSc)</option>
+                                    <option className="text-[18px] font-semibold" value="hnd">Postgraduate Diploma(PGD)</option>
+                                    <option className="text-[18px] font-semibold" value="masters">Masters Degree</option>
+                                </select>
                             </div>
-                            <div className="mx-5 ms:w-full">
-                                <input className='py-[10px] mt-2 mb-6 pl-[15px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none placeholder:text-[17px]' type="email" name="emailAdd" required placeholder='E-mail' />
+                            <div className="mx-5">
+                                <select className='py-[10px] mt-2 mb-6 pl-[15px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none' name="educationLvl" required >
+                                    <option className="text-[18px]" value="">Available Programme(s)</option>
+                                    <optgroup className="text-[22px]" label="Associate Degree's (B.Sc - AD)">
+                                        <option className="text-[18px] font-[500]" value="Social Media Management">Social Media Management</option>
+                                        <option className="text-[18px] font-[500]" value="Customer Service">Customer Service</option>
+                                        <option className="text-[18px] font-[500]" value="Human Resource Management">Human Resource Management</option>
+                                        <option className="text-[18px] font-[500]" value="Project Management">Project Management</option>
+                                        <option className="text-[18px] font-[500]" value="Risk Management">Risk Management</option>
+                                        <option className="text-[18px] font-[500]" value="Sales Management">Sales Management</option>
+                                        <option className="text-[18px] font-[500]" value="Information Management">Information Management</option>
+                                        <option className="text-[18px] font-[500]" value="Supply Chain Management">Supply Chain Management</option>
+                                        <option className="text-[18px] font-[500]" value="Marketing">Marketing</option>
+                                        <option className="text-[18px] font-[500]" value="Accounting">Accounting</option>
+                                    </optgroup>
+                                    <optgroup className="text-[22px]" label="Executive MBA Program">
+                                        <option className="text-[18px] font-[500]" value="Business Management">Business Management</option>
+                                        <option className="text-[18px] font-[500]" value="Marketing">Marketing</option>
+                                        <option className="text-[18px] font-[500]" value="Human Resources">Human Resources</option>
+                                        <option className="text-[18px] font-[500]" value="Risk Management">Risk Management</option>
+                                        <option className="text-[18px] font-[500]" value="Supply Chain Management">Supply Chain Management</option>
+                                        <option className="text-[18px] font-[500]" value="Project Management">Project Management</option>
+                                        <option className="text-[18px] font-[500]" value="Information Technology">Information Technology</option>
+                                        <option className="text-[18px] font-[500]" value="Sales Management">Sales Management</option>
+                                        <option className="text-[18px] font-[500]" value="Accounting">Accounting</option>
+                                    </optgroup>
+                                </select>
                             </div>
-                        </div>
-                        <div className="mx-5">
-                            <select className='py-[10px] mt-2 mb-6 pl-[15px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none' name="educationLvl" required >
-                                <option value="">Highest Education Level</option>
-                                <option className="text-[18px] font-semibold" value="ssce">Senior Secondary School Certificate Examination(SSCE)</option>
-                                <option className="text-[18px] font-semibold" value="ond">Ordinary National Diploma(OND)</option>
-                                <option className="text-[18px] font-semibold" value="hnd">Higher National Diploma(HND)</option>
-                                <option className="text-[18px] font-semibold" value="hnd">Bachelor of Sciences(BSc)</option>
-                                <option className="text-[18px] font-semibold" value="hnd">Postgraduate Diploma(PGD)</option>
-                                <option className="text-[18px] font-semibold" value="masters">Masters Degree</option>
-                            </select>
-                        </div>
-                        <div className="mx-5">
-                            <select className='py-[10px] mt-2 mb-6 pl-[15px] pr-[30px] text-[18px] w-full rounded-lg bg-transparent border-black border-[1px] focus:border-orange-400 focus:shadow focus:shadow-orange-400 focus:border-2 outline-none' name="educationLvl" required >
-                                <option className="text-[18px]" value="">Available Programme(s)</option>
-                                <optgroup className="text-[22px]" label="Associate Degree's (B.Sc - AD)">
-                                    <option className="text-[18px] font-[500]" value="Social Media Management">Social Media Management</option>
-                                    <option className="text-[18px] font-[500]" value="Customer Service">Customer Service</option>
-                                    <option className="text-[18px] font-[500]" value="Human Resource Management">Human Resource Management</option>
-                                    <option className="text-[18px] font-[500]" value="Project Management">Project Management</option>
-                                    <option className="text-[18px] font-[500]" value="Risk Management">Risk Management</option>
-                                    <option className="text-[18px] font-[500]" value="Sales Management">Sales Management</option>
-                                    <option className="text-[18px] font-[500]" value="Information Management">Information Management</option>
-                                    <option className="text-[18px] font-[500]" value="Supply Chain Management">Supply Chain Management</option>
-                                    <option className="text-[18px] font-[500]" value="Marketing">Marketing</option>
-                                    <option className="text-[18px] font-[500]" value="Accounting">Accounting</option>
-                                </optgroup>
-                                <optgroup className="text-[22px]" label="Executive MBA Program">
-                                    <option className="text-[18px] font-[500]" value="Business Management">Business Management</option>
-                                    <option className="text-[18px] font-[500]" value="Marketing">Marketing</option>
-                                    <option className="text-[18px] font-[500]" value="Human Resources">Human Resources</option>
-                                    <option className="text-[18px] font-[500]" value="Risk Management">Risk Management</option>
-                                    <option className="text-[18px] font-[500]" value="Supply Chain Management">Supply Chain Management</option>
-                                    <option className="text-[18px] font-[500]" value="Project Management">Project Management</option>
-                                    <option className="text-[18px] font-[500]" value="Information Technology">Information Technology</option>
-                                    <option className="text-[18px] font-[500]" value="Sales Management">Sales Management</option>
-                                    <option className="text-[18px] font-[500]" value="Accounting">Accounting</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div className="mx-5 mt-2">
-                            <button type="submit" className='py-[10px] w-[100%] sw:mt-0 rounded-xl font-semibold sw:text-[24px] bg-blue-500 text-white'>Register</button>
+                            <div className="mx-5 mt-2">
+                                <button type="submit" className='py-[10px] w-[100%] sw:mt-0 rounded-xl font-semibold sw:text-[24px] bg-blue-500 text-white'>Register</button>
+                            </div>
                         </div>
                     </form>
                 </div>

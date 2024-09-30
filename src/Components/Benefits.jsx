@@ -15,7 +15,7 @@ const Benefits = () => {
     }, []);
 
     return (
-        <div className='bg-pink-50 w-full py-[90px]'>
+        <div className='bg-gray-300 w-full py-[90px]'>
             <div className='ss:grid ss:grid-cols-2 px-7'>
                 <img className='md:mt-[50px] ss:mt-[80px] rounded-xl mt-[-50px]' src={Girl} alt="" />
                 <div className='flex flex-col se:pl-[50px] st:pl-[px]'>

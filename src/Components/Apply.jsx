@@ -3,7 +3,7 @@ import { React } from "react";
 const Newsletter = () => {
 
     return (
-        <div id="apply" className='w-full md:py-10 py-10 bg-pink-50 text-black'>
+        <div id="apply" className='w-full md:py-10 py-10 bg-gray-300 text-black'>
             <div className='flex flex-col items-center justify-center'>
                 <form className="w-[90%] ms:w-[50%] mx-5 bg-white py-[35px] shadow-md shadow-black/50">
                     <p className='font-serif font-semibold text-orange-600 text-[23px] sx:text-[25.5px] px-1 sy:text-[30px] text-center leading-[40px] sx:leading-[50px]'>
@@ -72,7 +72,7 @@ const Newsletter = () => {
                         </select>
                     </div>
                     <div className="mx-5">
-                        <button type="submit" className='py-[15px] w-[100%] mt-1 rounded-xl font-semibold sw:text-[24px] bg-[#01022e] text-white'>Register Now</button>
+                        <button type="submit" className='py-[15px] w-[100%] mt-1 rounded-xl font-semibold sw:text-[24px] bg-blue-500 text-white'>Register Now</button>
                     </div>
                 </form>
             </div>

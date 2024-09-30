@@ -10,14 +10,12 @@ import Program from '../Components/Program';
 import Quote from '../Components/Quote';
 import Accreditation from '../Components/Accreditation';
 import Testimonial from '../Components/Testimonial';
-import PopUp from '../Components/PopUp';
 
 const Home = () => {
 
     return (
         <div className='w-full'>
             <Navbar />          {/* done */}
-            <PopUp />
             <Homeindex />       {/* text */}
             <AboutUs />         {/* done */}
             <Quote />           {/* one more quote */}
