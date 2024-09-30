@@ -9,7 +9,7 @@ const Quote = () => {
     return (
         <div className='bg-gray-300'>
             <div className='py-[30px] mv:pl-[50px] mv:pr-[30px] mv:flex mv:flex-row flex flex-col items-center'>
-                <img className='mv:w-[25%] mv:h-[60vh] w-[80%] pb-[12px]' src={Quotes2} alt="" />
+                <img className='scale-95' src={Quotes2} alt="" />
                 <div>
                     <p className='mx-[20px] mv:ml-[50px] lg:mt-[7.5%] ss:text-[25px] font-serif sd:text-[23px] text-[20px] font-semibold'>
                         <FaQuoteLeft className='text-blue-500' />
@@ -22,7 +22,7 @@ const Quote = () => {
                 </div>
             </div>
             <hr className='h-1 bg-black/70'/>
-            <div className='py-[30px] mv:pl-[50px] mv:pr-[30px] mv:flex mv:flex-row flex flex-col-reverse items-center'>
+            <div className='py-[30px] mv:pr-[50px] mv:pl-[30px] mv:flex mv:flex-row flex flex-col-reverse items-center'>
                 <div>
                     <p className='mx-[20px] mv:ml-[50px] lg:mt-[7.5%] ss:text-[25px] font-serif sd:text-[23px] text-[20px] font-semibold'>
                         <FaQuoteLeft className='text-blue-500' />
