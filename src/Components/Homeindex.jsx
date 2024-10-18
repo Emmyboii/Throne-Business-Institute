@@ -6,7 +6,7 @@ import Background1 from "../Images/background2.jpg";
 import { RiArrowUpWideLine } from "react-icons/ri";
 import Background2 from "../Images/programBG.jpg";
 import Background3 from "../Images/BG2.jpg";
-import { BsWhatsapp  } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -72,12 +72,12 @@ const Homeindex = () => {
                     <RiArrowUpWideLine size={40} className='' />
                 </button>
 
-                <div className='bg-green-600 fixed text-white text-center top-[88%] right-[1%] px-3 py-2 rounded-full z-40'>
-                    <p className='font-bold text-[14px] pb-2'>CHAT WITH AN ADVISOR</p>
-                    <a href="https://wa.link/dgb7ft" rel='noreferrer' target='_blank' className='hover:scale-95 text-[20px] bg-green-40 flex items-center justify-center font-semibold duration-500'>
-                        <BsWhatsapp  className='text-[30px] text-white'/>
-                    </a>
-                </div>
+                <a href="https://wa.link/dgb7ft" rel='noreferrer' target='_blank' className='bg-green-600 hover:scale-95 duration-500 fixed text-white text-center top-[90%] right-[3%] px-3 py-2 rounded-[15px] z-40'>
+                    {/* <p className='font-bold text-[14px] pb-2'>CHAT WITH AN ADVISOR</p> */}
+                    <div title='CHAT WITH AN ADVISOR' className='hover:scale-95 text-[20px] flex items-center justify-center font-semibold duration-500'>
+                        <BsWhatsapp className='text-[30px] text-white' />
+                    </div>
+                </a>
 
                 <div className='xl:block hidden absolute top-[23%] 2lq:top-[23%] left-[60%]'>
                     <form className="w-[80%] ms:w-[80%] mx-5 bg-white py-[30px] flex flex-col shadow-md shadow-black/50">

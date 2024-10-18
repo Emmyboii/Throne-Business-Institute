@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import Blackbg from '../Images/Blackbg.JPG';
 import graduate from '../Images/abt2.jpg'; import vision from '../Images/Vision1.png';
 import mission from '../Images/mission1.png';
 import { FaArrowRightLong } from "react-icons/fa6";

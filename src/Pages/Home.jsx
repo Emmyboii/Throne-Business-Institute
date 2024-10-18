@@ -15,11 +15,11 @@ const Home = () => {
 
     return (
         <div className='w-full'>
-            <Navbar />          {/* done */}
-            <Homeindex />       {/* text */}
-            <AboutUs />         {/* done */}
-            <Quote />           {/* one more quote */}
-            <Program />         {/* Done */}
+            <Navbar />          {/* Done */}
+            <Homeindex />       {/* apply */}
+            <AboutUs />         {/* Done */}
+            <Quote />           {/* Done */}
+            <Program />         {/* Currency */}
             <Benefit />         {/* Done */}
             <Testimonial />     {/* Done */}
             <Apply />           {/* side text */}
