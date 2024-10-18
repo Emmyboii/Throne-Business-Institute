@@ -72,9 +72,9 @@ const Homeindex = () => {
                     <RiArrowUpWideLine size={40} className='' />
                 </button>
 
-                <a href="https://wa.link/dgb7ft" rel='noreferrer' target='_blank' className='bg-green-600 hover:scale-95 duration-500 fixed text-white text-center top-[90%] right-[3%] px-3 py-2 rounded-[15px] z-40'>
+                <a href="https://wa.link/dgb7ft" rel='noreferrer' target='_blank' title='CHAT WITH AN ADVISOR' className='bg-green-600 hover:scale-95 duration-500 fixed text-white text-center top-[90%] right-[3%] px-3 py-2 rounded-[15px] z-40'>
                     {/* <p className='font-bold text-[14px] pb-2'>CHAT WITH AN ADVISOR</p> */}
-                    <div title='CHAT WITH AN ADVISOR' className='hover:scale-95 text-[20px] flex items-center justify-center font-semibold duration-500'>
+                    <div  className='hover:scale-95 text-[20px] flex items-center justify-center font-semibold duration-500'>
                         <BsWhatsapp className='text-[30px] text-white' />
                     </div>
                 </a>
