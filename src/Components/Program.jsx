@@ -1,12 +1,18 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Back from '../Images/Screenshot.png';
 import Back2 from '../Images/graduate.jpg';
+import ABD from '../Images/EAD1.jpg';
+import MBA from '../Images/EAD2.jpg';
+import EDP from '../Images/ED2.JPG';
+import PC from '../Images/PC.jpg';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
-// import { ReactTyped } from 'react-typed';
+import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { GiOpenBook, GiGraduateCap } from "react-icons/gi";
 
 const Program = () => {
-
 
   const [prog1, setprog1] = useState(false)
   const [prog2, setprog2] = useState(false)
@@ -51,12 +57,19 @@ const Program = () => {
     setprog5(!prog5)
   }
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-out-cubic"
+    });
+    AOS.refresh();
+  }, []);
 
   return (
     <div id='programs' className='w-full h-[100%]'>
       <div className='flex mo:flex-row flex-col text-white justify-center items-center text-center bg-[#01022e]'>
         <div className='z-10 mo:pl-[55px] mo:pr-0 mo:py-0 ma:pl-9 ma:pr-9 py-[70px]'>
-          <h1 className='lg:text-[40px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-orange-500'>
+          <h1 data-aos="fade-down" data-aos-delay="100" className='aos-init lg:text-[40px] md:text-[55px] sm:text-[46px] sy:text-[43px] text-[38px] font-bold border-none font-serif text-orange-500'>
             Choose Your Path to Success
           </h1>
           <p className='md:text-[25px] sy:text-[25px] text-[22px] pt-5'>
@@ -68,16 +81,17 @@ const Program = () => {
       <img className='w-full h-[40vh] mp:h-[60vh] object- mo:hidden block mo:scale-y-100 outline-none border-none' src={Back2} alt="" />
       <div className='bg-blue-900 py-[60px]'>
         <div>
-          <h1 className='text-center text-white font-extrabold sa:text-[39px] st:text-[37.5px] text-[34.7px] md:text-[50px]'>OUR PROGRAMS:</h1>
+          <h1 data-aos="zoom-in" data-aos-delay="100" className='aos-init text-center text-white font-extrabold sa:text-[39px] st:text-[37.5px] text-[34.7px] md:text-[50px]'>OUR PROGRAMS:</h1>
         </div>
 
         <div id='ABD' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 my-[90px] text-[17.5px] ma:text-[19px]'>
+          <img src={ABD} alt="" className='' />
           <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px]'>
-            <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
-              Ass. BSc. Degree
+            <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
+              Ass. Bachelor's Degree
             </h1>
             <p className='pt-3 leading-[30px]'>
-              Our Associate Degree Bachelor's Program is designed to enable you understand what it takes to be ever prepared in a ever
+              Our Associate Bachelor's Degree Program is designed to enable you understand what it takes to be ever prepared in a ever
               changing world, with our world class professors and lecturers, the program is expected to imbibe key values and effective
               strategies that can only foster progress in the latest management issues and challenges.
               <span onClick={handleProg1} className={prog1 ? 'hidden' : 'text-orange-400 text-[17px] hover:text-gray-400 cursor-pointer mx-3 active:scale-105 duration-500'}>
@@ -94,7 +108,7 @@ const Program = () => {
                 <li className='pt-2'>Get an NYSC certificate after.</li>
               </ul>
 
-              <p className='pt-8 leading-[30px]'>
+              <p className='pt-6 leading-[30px]'>
                 According to Nuffic- the Dutch Organisation for Internationalisation in Education, an European
                 Associate BSc. degree is comparable to a Nigerian HND program and even better
                 because it qualifies the student to a direct Master's degree afterwards. Our students are
@@ -138,24 +152,54 @@ const Program = () => {
                   Accounting
                 </li>
               </ul>
-
-              <p className='pt-7'>
-                <span className='font-bold'>ACCREDITATION:</span><br /> Our programs are accredited by the Switzerland Education Board, Carcao
-                Educational Board, Central African Republic Education Board, Chad Educational Board PIET
-                and recognized by the Nigerian University Council.
-              </p>
-              <p className='pt-6'>
-                <span className='font-bold'>PARTNERSHIPS:</span><br /> We partner with SOBAT Business School, Switzerland, IICSE University, USA,
-                High Flyer University, USA, ESAE University, Benin, and Cape Coast University, West End
-                College University.
-              </p>
-
-              <div className='pt-7'>
-                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>2 year program</p>
-                <p className='pt-4'>
-                  <span className='font-bold'>TUITION: </span>
-                  <strike className='font-bold text-orange-400'>CHF 2,660</strike> <span className='font-bold'>NGN 12,000/month</span>
-                </p>
+              <div className='grid lg:grid-cols-3 sx:grid-cols-2 gap-[16px] mt-5'>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><FaRegCalendarAlt className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Schedule</p>
+                  <p className='text-[16.5px]'>
+                    12 - 24 months (depending on your schedule and credit-option).
+                  </p>
+                </div>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><GiOpenBook className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Delivery</p>
+                  <p className='text-[16.5px]'>
+                    Flexible self-study programme with personalised support.
+                  </p>
+                </div>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><FaMapMarkerAlt className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Location</p>
+                  <p className='text-[16.5px]'>
+                    100% Online.
+                  </p>
+                </div>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><GiGraduateCap className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Scholarships</p>
+                  <p className='text-[16.5px]'>
+                    Scholarships are available
+                  </p>
+                  <p className='text-[16.5px]'>
+                    Apply now and pay just <br /> <span className='text-orange-400 font-bold'>CHF 6.34</span> <br /> (NGN 12,000/month)
+                  </p>
+                </div>
+                <div className='py-3 lg:px-4 px-[10px] text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='font-bold mb-2 text-center'>ACCREDITATION</p>
+                  <p className='text-[16.5px]'>
+                    Our programs are accredited by the Switzerland Education Board, Carcao
+                    Educational Board, Central African Republic Education Board, Chad Educational Board PIET
+                    and recognized by the Nigerian University Council.
+                  </p>
+                </div>
+                <div className='py-3 lg:px-4 px-[10px] text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='font-bold mb-2 text-center'>PARTNERSHIPS</p>
+                  <p className='text-[16.5px]'>
+                    We partner with SOBAT Business School, Switzerland, IICSE University, USA,
+                    High Flyer University, USA, ESAE University, Benin, and Cape Coast University, West End
+                    College University.
+                  </p>
+                </div>
               </div>
               <div className='text-center mt-8'>
                 <a href="#apply">
@@ -168,8 +212,9 @@ const Program = () => {
         </div>
 
         <div id='MBA' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[102px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
-            <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-[#ff9633] font-bold'>
+          <img src={MBA} alt="" className='' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
+            <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-[#ff9633] font-bold'>
               Executive MBA Program
             </h1>
             <div className='pt-3 leading-[30px]'>
@@ -185,7 +230,7 @@ const Program = () => {
                 with the skills and knowledge needed to excel in today's competitive business world.
               </span>
             </div>
-            <div className={prog2 ? 'block pt-7 leading-[33px]' : 'pt-5 hidden'}>
+            <div className={prog2 ? 'block pt-7' : 'pt-5 hidden'}>
               <h1 className='text-center font-bold text-orange-500'>IT’S TIME TO REACH FOR GREATER</h1>
               <ul>
                 <li className='flex gap-2 pb-2'><GoDotFill className='mt-2' /> Gain access to higher-paying positions and leadership roles.</li>
@@ -232,24 +277,54 @@ const Program = () => {
                   Accounting
                 </li>
               </ul>
-
-              <p className='pt-7'>
-                <span className='font-bold'>ACCREDITATION:</span><br /> Our programs are accredited by the Switzerland Education Board, Carcao
-                Educational Board, Central African Republic Education Board, Chad Educational Board PIET
-                and recognized by the Nigerian University Council.
-              </p>
-              <p className='pt-6'>
-                <span className='font-bold'>PARTNERSHIPS:</span><br /> We partner with SOBAT Business School, Switzerland, IICSE University, USA,
-                High Flyer University, USA, ESAE University, Benin, and Cape Coast University, West End
-                College University.
-              </p>
-
-              <div className='pt-7'>
-                <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>12 months</p>
-                <p className='pt-4'>
-                  <span className='font-bold'>TUITION: </span>
-                  <strike className='font-bold text-orange-400'>CHF 12,660</strike> <span className='font-bold'>NGN 59,000/month</span>
-                </p>
+              <div className='grid lg:grid-cols-3 sx:grid-cols-2 gap-[16px] mt-5'>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><FaRegCalendarAlt className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Schedule</p>
+                  <p className='text-[16.5px]'>
+                    12 months.
+                  </p>
+                </div>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><GiOpenBook className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Delivery</p>
+                  <p className='text-[16.5px]'>
+                    Flexible self-study programme with personalised support.
+                  </p>
+                </div>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><FaMapMarkerAlt className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Location</p>
+                  <p className='text-[16.5px]'>
+                    100% Online.
+                  </p>
+                </div>
+                <div className='py-4 px-4 text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='flex justify-center items-center'><GiGraduateCap className='text-[50px]' /></p>
+                  <p className='font-bold mb-2 text-center'>Scholarships</p>
+                  <p className='text-[16.5px]'>
+                    Scholarships are available
+                  </p>
+                  <p className='text-[16.5px]'>
+                    Apply now and pay just <br /> <span className='text-orange-400 font-bold'>CHF 31.18</span> <br /> (NGN 59,000/month)
+                  </p>
+                </div>
+                <div className='py-3 lg:px-4 px-[10px] text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='font-bold mb-2 text-center'>ACCREDITATION</p>
+                  <p className='text-[16.5px]'>
+                    Our programs are accredited by the Switzerland Education Board, Carcao
+                    Educational Board, Central African Republic Education Board, Chad Educational Board PIET
+                    and recognized by the Nigerian University Council.
+                  </p>
+                </div>
+                <div className='py-3 lg:px-4 px-[10px] text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
+                  <p className='font-bold mb-2 text-center'>PARTNERSHIPS</p>
+                  <p className='text-[16.5px]'>
+                    We partner with SOBAT Business School, Switzerland, IICSE University, USA,
+                    High Flyer University, USA, ESAE University, Benin, and Cape Coast University, West End
+                    College University.
+                  </p>
+                </div>
               </div>
               <div className='text-center mt-8'>
                 <a href="#apply">
@@ -262,13 +337,14 @@ const Program = () => {
         </div>
 
         <div>
-          <h1 className='text-center text-white font-extrabold text-[39px] md:text-[50px]'>OTHER PROGRAMS:</h1>
+          <h1 data-aos="zoom-in" data-aos-delay="100" className='aos-init text-center text-white font-extrabold text-[39px] md:text-[50px]'>OTHER PROGRAMS:</h1>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
+        <div className='md:mx-[20%] sa:mx-[12.5%] sv:mx-[15%] mx-[10%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
+        <img src={EDP} alt="" className='' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
                 Executive Diploma Program
               </h1>
               <div className='pt-3 leading-[30px]'>
@@ -340,7 +416,7 @@ const Program = () => {
                   <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>One month program</p>
                   <p className='pt-4'>
                     <span className='font-bold'>TUITION: </span>
-                    <strike className='font-bold text-orange-500'>CHF 500</strike> <span className='font-bold'>NGN 5,000</span>
+                    <span className='font-bold'>NGN 5,000</span>
                   </p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
@@ -356,10 +432,11 @@ const Program = () => {
           </div>
         </div>
 
-        <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
+        <div className='md:mx-[20%] sv:mx-[15%] mx-[13%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
+        <img src={PC} alt="" className='' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
                 Professional Certificates
               </h1>
               <div className='pt-3 leading-[30px]'>
@@ -445,9 +522,10 @@ const Program = () => {
         </div>
 
         <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[22px] pb-[30px]'>
+        <img src={MBA} alt="" className='' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
             <div>
-              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] mt-5 text-orange-500 font-bold'>
+              <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
                 Executive Mini MBA Program
               </h1>
               <div className='pt-3 leading-[30px]'>

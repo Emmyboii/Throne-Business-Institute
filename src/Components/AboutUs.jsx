@@ -16,7 +16,7 @@ const AboutUs = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1100,
+            duration: 1000,
             easing: "ease-out-cubic"
         });
         AOS.refresh();
@@ -29,30 +29,34 @@ const AboutUs = () => {
             </h1>
             <div className={prog ? 'flex flex-col-reverse' : 'md:grid md:grid-cols-2 flex flex-col-reverse'}>
                 <div className=''>
-                    <p data-aos="fade-down" data-aos-delay="200" className={prog ? 'hidden' : 'xl:px-[50px] md:pl-[30px] aos-init sm:text-[30px] st:text-[26px] text-[22px] text-center md:text-left mt-0 st:mt-5 lg:mt-1 font-medium'}>
+                    <p data-aos="fade-down" data-aos-delay="100" className={prog ? 'hidden' : 'xl:px-[50px] md:pl-[30px] aos-init sm:text-[30px] st:text-[26px] text-[22px] text-center md:text-left mt-0 st:mt-5 lg:mt-1 font-medium'}>
                         What We Represent
                     </p>
                     <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] mx-6 md:mx-0 mt-4 font-medium leading-6 st:leading-7'>
-                        Throne Management and Business Institute Switzerland is the first legalized WhatsApp & P2P Triple Accredited Ed-Tech
-                        Organization in the world providing an academically rigorous education to students who will walk out of school ready for
-                        lives of leadership and service to their community. From management to technology and social programs, each program is
-                        filled with activity that is both enriching and fun.
+                        Throne Management and Business Institute Switzerland is a pioneering Ed-Tech organization, globally accredited for its
+                        rigorous academic programs. We empower students to become leaders and serve their communities through our comprehensive
+                        curriculum that blends management, technology, and social programs.
                     </p>
                     <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] mx-6 md:mx-0 se:pt-8 pt-4 font-medium leading-6 st:leading-7'>
-                        We strive to be committed to the students we are privileged to serve, in our alumni association, our dedicated, talented
-                        faculty and staff. We also take pride in having the most active and helpful group of partners, visionary parents,
-                        well-wishers, alumni and friends.
+                        Since our arrival in Nigeria in 2018, over 20,000 students have benefited from our tuition scholarships, underscoring our
+                        commitment to advancing literacy and education in the country. Our world-class faculty and globally recognized programs
+                        ensure a transformative learning experience.
                     </p><br />
                     <p data-aos="fade-up" data-aos-delay="100" onClick={handleProg} className={prog ? 'hidden' : 'aos-init md:pl-0 xl:pl-[30px] pb-3 mx-6 text-orange-500 st:text-[20px] flex gap-3 cursor-pointer duration-500'}>
                         Learn More <FaArrowRightLong className='mt-[6px]' />
                     </p>
                     <div className={prog ? 'block' : 'hidden'}>
                         <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] pb-9 mx-6 md:mx-0  font-medium leading-6 st:leading-7'>
-                            We are committed to democratizing education by providing high-quality, affordable, and flexible programs that cater to
-                            the diverse needs of learners across Nigeria. Our goal is to bridge the gap between traditional education and the
-                            demands of the modern world by leveraging technology to deliver exceptional learning experiences.
-                            As a leading global provider of innovative educational solutions, we strive to create a world where education is
-                            accessible to all and where knowledge is celebrated as the catalyst for positive change.
+                            We are dedicated to serving our students, alumni, and partners with exceptional quality and support. Our alumni
+                            association, talented faculty, and dedicated staff are integral to our mission. We are proud of our active and
+                            supportive community of parents, well-wishers, and friends.
+                        </p>
+                        <p className='xl:px-[50px] md:pl-[30px] md:pr-4 lg:text-[21px] sm:text-[18px] text-[18px] pb-9 mx-6 md:mx-0  font-medium leading-6 st:leading-7'>
+                            Our goal is to democratize education by offering affordable, high-quality, and flexible programs that meet the 
+                            diverse needs of learners across Nigeria. We leverage technology to deliver exceptional learning experiences and 
+                            bridge the gap between traditional education and the demands of the modern world. As a leading global provider of 
+                            innovative educational solutions, we strive to create a world where education is accessible to all and knowledge is 
+                            celebrated as a catalyst for positive change.
                         </p>
                     </div>
                     <div className={prog ? 'block bg-[#616060] w-full' : 'hidden'}>
@@ -116,7 +120,7 @@ const AboutUs = () => {
                                 show less
                             </span>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div className='flex items-center justify-center'>
