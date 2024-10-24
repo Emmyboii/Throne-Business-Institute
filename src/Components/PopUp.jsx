@@ -123,7 +123,7 @@ const PopUp = () => {
                             </select>
                         </div>
                         <div className="mx-5">
-                            <button type="submit" className='py-[7px] w-[100%] sw:mt-0 rounded-xl font-semibold sw:text-[24px] bg-blue-500 text-white'>Apply Now</button>
+                            <button type="submit" className='py-[7px] w-[100%] sw:mt-0 rounded-xl font-semibold sw:text-[24px] bg-blue-500 text-white'>Apply</button>
                         </div>
                     </form>
                 </div>
