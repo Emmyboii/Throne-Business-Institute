@@ -11,6 +11,8 @@ import Quote from '../Components/Quote';
 import Accreditation from '../Components/Accreditation';
 import Testimonial from '../Components/Testimonial';
 import Start from '../Components/Start';
+import Partnership from '../Components/Partnership';
+import PopUp from '../Components/PopUp';
 
 const Home = () => {
 
@@ -18,15 +20,17 @@ const Home = () => {
         <div className='w-full'>
             <Navbar />          {/* Done */}
             <Homeindex />       {/* Done */}
+            <PopUp />           {/* Done */}
             <AboutUs />         {/* Done */}
             <Quote />           {/* Done */}
             <Program />         {/* Done */}
             <Benefit />         {/* Done */}
+            <Start />           {/* Done */}
             <Testimonial />     {/* Done */}
             <Apply />           {/* Done */}
             <ContactUs />       {/* Done */}
-            <Start />           {/* Done */}
             <Accreditation />   {/* Done */}
+            <Partnership />     {/* Done */}
             <Footer />          {/* Done */}
         </div>
     )

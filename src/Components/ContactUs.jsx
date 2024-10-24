@@ -17,13 +17,13 @@ const ContactUs = () => {
                         <div className='flex gap-3 items-center mt-3'>
                             <FaPhoneVolume className='text-[27px]' />
                             <a href='tel: +2439012104873' rel='noreferrer' target='_blank' className='hover:scale-95 text-[20px] font-semibold duration-500 mr-[220px]'>
-                                +234-901-210-4873
+                                +234 913 494 2707
                             </a>
                         </div>
                         <div className='flex gap-3 items-center mt-9'>
                             <MdOutlineEmail className='text-[27px]' />
                             <a href='mailto:tmbi@mail.ee' rel='noreferrer' target='_blank' className='hover:scale-95 text-[20px] font-semibold duration-500 mr-[220px]'>
-                                info@thronebusinessinstitute.com.ng
+                                info@thronebusinessinstituteswitzerland.com
                             </a>
                         </div>
                     </div>
@@ -31,13 +31,13 @@ const ContactUs = () => {
                         <div className='flex flex-col gap-3 items-center pt-3'>
                             <FaPhoneVolume className='sv:text-[27px] text-[23.4px]' />
                             <a href='tel: +2439012104873' rel='noreferrer' target='_blank' className='text-[20px] font-semibold hover:scale-90 duration-500'>
-                                +243-901-210-4873
+                                +234 913 494 2707
                             </a>
                         </div>
                         <div className='flex flex-col gap-3 items-center pt-3'>
                             <MdOutlineEmail className='sv:text-[27px] text-[23.4px]' />
                             <a href='mailto:tmbi@mail.ee' rel='noreferrer' target='_blank' className='text-[20px] font-semibold hover:scale-90 duration-500'>
-                                tmbi@mail.ee
+                                info@thronebusinessinstituteswitzerland.com
                             </a>
                         </div>
                     </div>

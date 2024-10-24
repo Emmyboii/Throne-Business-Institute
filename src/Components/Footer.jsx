@@ -18,7 +18,7 @@ const Footer = () => {
                         <a href="https://ng.linkedin.com/company/tmbis-ng-trs" rel='noreferrer' target='_blank' className='underline'>
                             <FaLinkedin />
                         </a>
-                        <a href="https://wa.link/kpeupv" rel='noreferrer' target='_blank' className='underline'>
+                        <a href="https://wa.me/message/ZDO76R45EDU2K1" rel='noreferrer' target='_blank' className='underline'>
                             <FaWhatsapp />
                         </a>
                     </div>
@@ -60,13 +60,13 @@ const Footer = () => {
                         <div className='mr:flex mr:gap-3 text-center items-center pt-8'>
                             <MdOutlineEmail className='mr:block hidden' />
                             <a className='text-[18px]' href='mailto:tmbi@mail.ee' rel='noreferrer' target='_blank'>
-                                tmbi@mail.ee
+                                info@thronebusinessinstituteswitzerland.com
                             </a>
                         </div>
                         <div className='mr:flex mr:gap-3 text-center items-center pt-8'>
                             <FaPhoneVolume className='mr:block hidden' />
                             <a className='text-[18px]' href='tel: +2439012104873' rel='noreferrer' target='_blank'>
-                                +234-901-210-4873
+                                +234 913 494 2707
                             </a>
                         </div>
                     </div>
@@ -74,13 +74,13 @@ const Footer = () => {
             </div>
             <div className='text-white ms:flex items-center mt-[30px] xl:mr-0 md:mr-[50px]'>
                 <p className='text-[15px]  mr:text-[16px] text-white/80 text-center ms:text-start flex'>
-                    © 2024 Throne Management and Business Institute Switzerland | Powered by Throne Management and Business Institute Switzerland
+                    © 2024 Throne Management and Business Institute Switzerland | All Nigerian operations managed by Throne Management Group (registered with CAC).
                 </p>
                 <div className='ms:flex hidden lg:flex-row flex-col ml-[120px] text-[25px] gap-4'>
                     <a href="https://ng.linkedin.com/company/tmbis-ng-trs" rel='noreferrer' target='_blank' className='underline'>
                         <FaLinkedin />
                     </a>
-                    <a href="https://wa.link/kpeupv" rel='noreferrer' target='_blank' className='underline'>
+                    <a href="https://wa.me/message/ZDO76R45EDU2K1" rel='noreferrer' target='_blank' className='underline'>
                         <FaWhatsapp />
                     </a>
                 </div>

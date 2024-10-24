@@ -72,8 +72,7 @@ const Homeindex = () => {
                     <RiArrowUpWideLine size={40} className='' />
                 </button>
 
-                <a href="https://wa.link/dgb7ft" rel='noreferrer' target='_blank' title='CHAT WITH AN ADVISOR' className='bg-green-600 hover:scale-95 duration-500 fixed text-white text-center top-[90%] right-[3%] px-3 py-2 rounded-[15px] z-40'>
-                    {/* <p className='font-bold text-[14px] pb-2'>CHAT WITH AN ADVISOR</p> */}
+                <a href="https://wa.me/message/ZDO76R45EDU2K1" rel='noreferrer' target='_blank' title='CHAT WITH AN ADVISOR' className='bg-green-600 hover:scale-95 duration-500 fixed text-white text-center top-[90%] right-[3%] px-3 py-2 rounded-[15px] z-40'>
                     <div  className='hover:scale-95 text-[20px] flex items-center justify-center font-semibold duration-500'>
                         <BsWhatsapp className='text-[30px] text-white' />
                     </div>
@@ -82,19 +81,6 @@ const Homeindex = () => {
                 <div className='xl:block hidden absolute top-[23%] 2lq:top-[23%] left-[60%]'>
                     <form className="w-[80%] ms:w-[80%] mx-5 bg-white py-[30px] flex flex-col shadow-md shadow-black/50">
                         <p className='font-serif font-semibold text-orange-600 relative text-[23px] pb-1 sx:text-[25.5px] px-1 sy:text-[30px] text-center leading-[40px] sx:leading-[50px]'>
-                            {/* <ReactTyped
-                                strings={
-                                    [
-                                        "APPLY NOW FOR A SCHOLARSHIP",
-                                        "With Scholarship"
-                                    ]
-                                }
-                                typeSpeed={100}
-                                backSpeed={60}
-                                startDelay={400}
-                                backDelay={200}
-                                loop
-                            /> */}
                             APPLY NOW FOR A SCHOLARSHIP
                         </p>
                         <div className='relative'>

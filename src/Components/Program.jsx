@@ -4,7 +4,8 @@ import 'aos/dist/aos.css';
 import Back from '../Images/Screenshot.png';
 import Back2 from '../Images/graduate.jpg';
 import ABD from '../Images/EAD1.jpg';
-import MBA from '../Images/EAD2.jpg';
+import MBA from '../Images/MBA.jpg';
+import MBA2 from '../Images/MBA2.jpg';
 import EDP from '../Images/ED2.JPG';
 import PC from '../Images/PC.jpg';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
@@ -85,8 +86,8 @@ const Program = () => {
         </div>
 
         <div id='ABD' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 my-[90px] text-[17.5px] ma:text-[19px]'>
-          <img src={ABD} alt="" className='' />
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] py-[20px]'>
+          <img src={ABD} alt="" className='h-[40vh] w-full object-cover' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[20px] p-[30px]'>
             <h1 className=' text-center text-[22px] sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
               Ass. Bachelor's Degree
             </h1>
@@ -181,7 +182,9 @@ const Program = () => {
                     Scholarships are available
                   </p>
                   <p className='text-[16.5px]'>
-                    Apply now and pay just <br /> <span className='text-orange-400 font-bold'>CHF 6.34</span> <br /> (NGN 12,000/month)
+                    Apply now and pay just <br />
+                    <span className='text-orange-400 font-bold'>CHF 6</span> <br />
+                    <span className='font-bold'>(NGN 10,000/month)</span>
                   </p>
                 </div>
                 <div className='py-3 lg:px-4 px-[10px] text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
@@ -212,8 +215,8 @@ const Program = () => {
         </div>
 
         <div id='MBA' className='md:mx-[19%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[102px] ma:text-[19px]'>
-          <img src={MBA} alt="" className='' />
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
+          <img src={MBA} alt="" className='h-[40vh] w-full object-cover' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] pt-[20px] px-[10px] pb-[30px]'>
             <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-[#ff9633] font-bold'>
               Executive MBA Program
             </h1>
@@ -306,7 +309,9 @@ const Program = () => {
                     Scholarships are available
                   </p>
                   <p className='text-[16.5px]'>
-                    Apply now and pay just <br /> <span className='text-orange-400 font-bold'>CHF 31.18</span> <br /> (NGN 59,000/month)
+                    Apply now and pay just <br />
+                    <span className='text-orange-400 font-bold'>CHF 32</span> <br />
+                    <span className='font-bold'>(NGN 60,000/month)</span>
                   </p>
                 </div>
                 <div className='py-3 lg:px-4 px-[10px] text-center border-white shadow-black shadow-lg border-2 rounded-xl'>
@@ -341,8 +346,8 @@ const Program = () => {
         </div>
 
         <div className='md:mx-[20%] sa:mx-[12.5%] sv:mx-[15%] mx-[10%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
-        <img src={EDP} alt="" className='' />
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
+          <img src={EDP} alt="" className='h-[40vh] w-full object-cover' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] pt-[20px] px-[10px] pb-[30px]'>
             <div>
               <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
                 Executive Diploma Program
@@ -414,16 +419,16 @@ const Program = () => {
 
                 <div className='pt-7'>
                   <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION:  </span>One month program</p>
-                  <p className='pt-4'>
+                  <p className='pt-4 font-bold'>
                     <span className='font-bold'>TUITION: </span>
-                    <span className='font-bold'>NGN 5,000</span>
+                    <span className='text-orange-400 font-bold'>CHF 3</span> ( NGN 5,000 )
                   </p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
-                  <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
+                  <a target='_blank' rel='noreferrer' href='https://wa.me/message/ZDO76R45EDU2K1'>
                     <button className='bg-orange-500 md:block font-bold hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
-                  <a target='_blank' rel='noreferrer' href='https://wa.me/p/4391537294231364/2349012104873'>
+                  <a target='_blank' rel='noreferrer' href='https://wa.me/p/8402945176485276/447979369907'>
                     <button className='bg-orange-500 font-bold block md:hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
                 </div>
@@ -433,8 +438,8 @@ const Program = () => {
         </div>
 
         <div className='md:mx-[20%] sv:mx-[15%] mx-[13%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
-        <img src={PC} alt="" className='' />
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
+          <img src={PC} alt="" className='h-[40vh] w-full object-cover' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[20px] pb-[30px]'>
             <div>
               <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
                 Professional Certificates
@@ -502,17 +507,18 @@ const Program = () => {
                   </li>
                 </ul>
 
-                <div className='pt-7'>
+                <div className='pt-7 font-bold'>
                   <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION: </span> 14 Days</p>
                   <p className='pt-4'>
-                    <span className='font-bold'>TUITION: </span> NGN 3,000
+                    <span className='font-bold'>TUITION: </span>
+                    <span className='text-orange-400 font-bold'>CHF 2</span> ( NGN 3,000 )
                   </p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
-                  <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
+                  <a target='_blank' rel='noreferrer' href='https://wa.me/message/ZDO76R45EDU2K1'>
                     <button className='bg-orange-500 font-bold md:block hidden text-white p-4 rounded-full'>GET STARTED</button>
                   </a>
-                  <a target='_blank' rel='noreferrer' href='https://wa.me/p/6349031568501910/2349012104873'>
+                  <a target='_blank' rel='noreferrer' href='https://wa.me/p/27493149160299758/447979369907'>
                     <button className='bg-orange-500 font-bold block md:hidden text-white p-4 rounded-full'>GET STARTED</button>
                   </a>
                 </div>
@@ -522,8 +528,8 @@ const Program = () => {
         </div>
 
         <div className='md:mx-[20%] sv:mx-[15%] mx-[12%] hover:scale-105 duration-500 text-white bg-blue-900 text-[17.5px] my-[70px] ma:text-[19px]'>
-        <img src={MBA} alt="" className='' />
-          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pb-[30px]'>
+          <img src={MBA2} alt="" className='h-[40vh] w-full object-cover' />
+          <div className='shadow-2xl shadow-black/60 mp:px-[40px] sb:px-[20px] px-[10px] pt-[20px] pb-[30px]'>
             <div>
               <h1 className='text-[22px] text-center sb:text-[24px] se:text-[28px] sy:text-[34px] ma:text-[40px] text-orange-500 font-bold'>
                 Executive Mini MBA Program
@@ -587,14 +593,16 @@ const Program = () => {
 
                 <div className='pt-7'>
                   <p className='text-[20px]'><span className='font-bold'>PROGRAM DURATION: </span> Two months</p>
-                  <p className='pt-4'>
-                    <span className='font-bold'>TUITION: </span> NGN 40,000</p>
+                  <p className='pt-4 font-bold'>
+                    <span className='font-bold'>TUITION: </span>
+                    <span className='text-orange-400 font-bold'>CHF 21</span> ( NGN 40,000 )
+                  </p>
                 </div>
                 <div className='items-center justify-center flex mt-8'>
-                  <a target='_blank' rel='noreferrer' href='https://wa.link/01wlzw'>
+                  <a target='_blank' rel='noreferrer' href='https://wa.me/message/ZDO76R45EDU2K1'>
                     <button className='bg-orange-500 font-bold md:block hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
-                  <a target='_blank' rel='noreferrer' href='https://wa.me/p/4057106524338825/2349012104873'>
+                  <a target='_blank' rel='noreferrer' href='https://wa.me/p/8749585015092601/447979369907'>
                     <button className='bg-orange-500 font-bold block md:hidden p-4 rounded-full'>GET STARTED</button>
                   </a>
                 </div>
@@ -604,12 +612,12 @@ const Program = () => {
         </div>
 
         <div className='flex flex-col items-center'>
-          <a target='_blank' rel='noreferrer' href="https://wa.link/01wlzw">
+          <a target='_blank' rel='noreferrer' href="https://wa.me/message/ZDO76R45EDU2K1">
             <button className='p-4 md:block hidden text-[18px] items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
               VIEW MORE
             </button>
           </a>
-          <a target='_blank' rel='noreferrer' href="https://wa.me/c/2349012104873">
+          <a target='_blank' rel='noreferrer' href="https://wa.me/c/447979369907">
             <button className='p-4 md:hidden text-[18px] block items-center justify-center mt-6 rounded-[27px] font-medium bg-white'>
               VIEW MORE
             </button>
